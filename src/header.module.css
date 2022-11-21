@@ -56,3 +56,24 @@ a {
 a:hover {
     opacity: 30%;
 }
+
+.leftHeader {
+    width: 40px;
+position: fixed;
+bottom: 0px;
+left: 40px;
+right: auto;
+z-index: 10;
+padding-bottom: 2em;
+}
+
+.rightHeader {
+    width: 40px;
+position: fixed;
+bottom: 0px;
+right: 40px;
+left: auto;
+z-index: 11;
+writing-mode: vertical-lr;
+padding-bottom: 2em;
+}
