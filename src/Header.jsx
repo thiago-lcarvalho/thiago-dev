@@ -51,19 +51,19 @@ export function Header() {
                 </div>
             </header>
             <div className={styles.leftHeader}>
-                <ul>
-                    <a href="https://www.linkedin.com/in/thiagoalcarvalho/" target="blank">
-                        <RiLinkedinFill size={25} />
+                <ul title="LinkedIn Profile" className={styles.linkButtons}>
+                    <a href="https://www.linkedin.com/in/thiagoalcarvalho/" target="blank" title="LinkedIn Profile Icon">
+                        <RiLinkedinFill size={25} title="LinkedIn Profile Icon"/>
                     </a>
                 </ul>
-                <ul>
-                    <a href="https://github.com/thiago-lcarvalho" target="blank">
-                        <RiGithubFill size={25} />
+                <ul title="GitHub Profile" className={styles.linkButtons}>
+                    <a href="https://github.com/thiago-lcarvalho" target="blank" title="GitHub Profile Icon">
+                        <RiGithubFill size={25} title="GitHub Profile Icon"/>
                     </a>
                 </ul>
-                <ul>
-                    <a href="https://www.instagram.com/sothiagomesmo/" target="blank">
-                        <RiInstagramFill size={25} />
+                <ul title="Instagram Profile" className={styles.linkButtons}>
+                    <a href="https://www.instagram.com/sothiagomesmo/" target="blank" title="Instagram Profile">
+                        <RiInstagramFill size={25} title="Instagram Profile Icon" />
                     </a>
                 </ul>
             </div>

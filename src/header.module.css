@@ -46,15 +46,16 @@ link {
 }
 
 a {
-    color: black;
+    color: var(--gray-900);
     transition: 0.3s;
-    opacity: 100%;
+    opacity: 60%;
     font-weight: light;
     font-family: var(--font-mono);
 }
 
 a:hover {
-    opacity: 30%;
+    color: black;
+    opacity: 100%;
 }
 
 .leftHeader {
@@ -76,4 +77,8 @@ left: auto;
 z-index: 11;
 writing-mode: vertical-lr;
 padding-bottom: 2em;
+}
+
+.linkButtons {
+    margin-bottom: 8px;
 }
