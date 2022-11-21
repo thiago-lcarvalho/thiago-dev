@@ -24,8 +24,7 @@ export function Header() {
             <header className={styles.header}>
                 <div className={styles.nameAndRole}>
                     <Atom className={styles.atom} size={50} />
-                    <ul>front-end</ul>
-                    <ul>artist</ul>
+                    {/* <ul>thiago carvalho</ul> */}
                     {/* <div className={styles.buttonDiv}>
 					<div className={`${theme}`}>
 						<button className="switch" onClick={toggleTheme}>
