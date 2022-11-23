@@ -2,6 +2,8 @@
     padding-left: 96px;
     padding-right: 96px;
     margin: 0px 191px;
+    top: 5em;
+    position: relative;
 }
 
 .frontTitle {
@@ -10,7 +12,7 @@
     font-size: 3.5rem;
 
     color: #624174;
-    background-image: -webkit-linear-gradient(0deg, #624174 50%, #613fcc 100%);
+    background-image: -webkit-linear-gradient(0deg, #624174 10%, #6740e7 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -26,7 +28,6 @@
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .IntroHello {
@@ -42,10 +43,16 @@
     font-family: var(--font-sans);
     font-weight: 800;
     color: #624174;
-    background-image: -webkit-linear-gradient(0deg, #c15ff5 50%, #4aa4eea0 100%);
+    background-image: -webkit-linear-gradient(0deg, #624174 10%, #6740e7 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  filter: blur(10px);
+  transition: .3s;
+}
+
+.hoursSince:hover {
+    filter: blur(0px);
 }
 
 .hoursSinceDiv {

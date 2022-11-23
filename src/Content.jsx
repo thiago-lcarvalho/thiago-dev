@@ -1,5 +1,6 @@
 import styles from './content.module.css';
 import moment from 'moment';
+import { Hourglass } from 'phosphor-react';
 
 
 
@@ -8,8 +9,7 @@ export function Content() {
     var timeNow = moment();
     const hoursSinceStartedDev = (timeNow.diff(timeStartedDev, 'hours'))
 
-    // console.log(moment("2022-07-06T18:00:00Z").startOf('hour').fromNow())
-    // console.log(moment.duration("2022-07-06T18:00:00Z").asHours())
+
     return (
         <div className={styles.contentMainWrapper}>
             <div className={styles.contentIntro}>
@@ -22,8 +22,9 @@ export function Content() {
             <div className={styles.hoursSinceDiv} >
             <span className={styles.hoursSince}>{hoursSinceStartedDev}</span>
             <span className={styles.hoursSinceText}>
-                Hours<br />spent<br />coding
+                hours<br />spent<br />coding|studying
             </span>
+            <Hourglass size={32} />
             </div>
         </div>
     )
