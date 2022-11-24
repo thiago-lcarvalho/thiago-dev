@@ -2,41 +2,15 @@
     padding-left: 96px;
     padding-right: 96px;
     margin: 0px 191px;
-    top: 5em;
     position: relative;
-}
-
-.frontTitle {
-    font-family: var(--font-sans);
-    font-weight: 800;
-    font-size: 3.5rem;
-
-    color: #624174;
-    background-image: -webkit-linear-gradient(0deg, #624174 10%, #6740e7 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 
 }
 
-.contentIntro {
-    font-family: var(--font-sans);
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.IntroHello {
-    font-size: 1.15rem;
-}
-
-.IntroName {
-    font-size: 3rem;
-}
 
 .hoursSince {
     font-size: 5rem;
@@ -47,26 +21,39 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  filter: blur(10px);
-  transition: .3s;
+    filter: blur(10px);
+    transition: .3s;
 }
 
-.hoursSince:hover {
+.hoursSinceHiddenText {
+    font-family: var(--font-sans);
+    font-size: .9rem;
+    opacity: 0%;
+    transition: .3s;
+    width: max-content;
+}
+
+.hoursSinceDiv:hover .hoursSince {
     filter: blur(0px);
+}
+
+.hoursSinceDiv:hover .hoursSinceHiddenText {
+    opacity: 100%;
 }
 
 .hoursSinceDiv {
     display: grid;
     grid-template-columns: 15em 10em;
     margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
+    margin-right: auto;
+    justify-content: center;
+
 }
 
 .hoursSinceText {
     font-family: var(--font-mono);
-    width:fit-content;
+    width: fit-content;
     padding-top: 1.4em;
     font-size: var(--fsz-pri);
-    text-align:left;
+    text-align: left;
 }
