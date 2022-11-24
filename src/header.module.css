@@ -8,10 +8,11 @@
 header {
     position: sticky;
     top: 0;
-    width: 100%;
+    width: 100vw;
+    gap: 66%;
+    justify-content: center;
     height: 6em;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(5px) saturate(120%);
     -webkit-backdrop-filter: blur(18px) saturate(139%);
@@ -34,12 +35,7 @@ link {
 }
 
 .nameAndRole {
-    padding: 5.5em;
-}
-
-.nameAndRole ul {
-    padding-bottom: 0.3em;
-    font-family: var(--font-mono);
+    padding: 0;
 }
 
 .finalHeader {
@@ -82,4 +78,25 @@ a:hover {
 
 .linkButtons {
     margin-bottom: 8px;
+}
+
+@media only screen and (max-device-width: 500px) {
+
+    .rightHeader {
+        bottom: 0px;
+        right: auto;
+        top: 30%;
+        text-align: start;
+    }
+
+    .leftHeader {
+        text-align: start;
+        top: 15%;
+        left: 3px
+    }
+
+    .header {
+        flex-wrap: wrap;
+        gap: 0%;
+    }
 }

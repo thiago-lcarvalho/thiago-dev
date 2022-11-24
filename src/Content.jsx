@@ -1,6 +1,6 @@
 import styles from './content.module.css';
 import moment from 'moment';
-import { Hourglass } from 'phosphor-react';
+import Paper from "@mui/material/Paper";
 
 
 export function Content() {
@@ -9,20 +9,27 @@ export function Content() {
     var timeNow = moment();
     const hoursSinceStartedDev = (timeNow.diff(timeStartedDev, 'hours'))
 
+
+
     return (
         <section>
-        <div className={styles.contentMainWrapper}>
-            <div>
-                <div className={styles.hoursSinceDiv} >
-                    <span className={styles.hoursSince}>{hoursSinceStartedDev}
-                    </span>
-                    <span className={styles.hoursSinceText}>
-                        hours<br />spent<br />coding|studying
-                    </span>
-                    <p className={styles.hoursSinceHiddenText}>on 06/07/2022 I made the decision to become a developer</p>
+            <div className={styles.contentMainWrapper}>
+                <div className={styles.paperDiv}>
+                <Paper elevation={6} sx={{color: 'none'}} >
+                {/* change to simple card and use glassmorphism/ put border radius */}
+                    <div className={styles.contentMainDiv}>
+                        <div className={styles.hoursSinceDiv} >
+                            <span className={styles.hoursSince}>{hoursSinceStartedDev}
+                            </span>
+                            <span className={styles.hoursSinceText}>
+                                hours<br />spent<br />coding|studying
+                            </span>
+                        </div>
+                        <span className={styles.hoursSinceHiddenText}>on 06/07/2022 I made the decision to become a developer</span>
+                    </div>
+                </Paper>
                 </div>
             </div>
-        </div>
         </section>
     )
 }

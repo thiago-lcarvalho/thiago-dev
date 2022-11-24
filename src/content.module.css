@@ -10,11 +10,18 @@
 
 }
 
+.contentMainDiv {
+    text-align: center;
+    justify-content: center;
+}
 
+.paperDiv {
+    
+}
 
 .hoursSince {
     font-size: 5rem;
-    font-family: var(--font-sans);
+    font-family: var(--font-sans); 
     font-weight: 800;
     color: #624174;
     background-image: -webkit-linear-gradient(0deg, #624174 10%, #6740e7 100%);
@@ -27,7 +34,7 @@
 
 .hoursSinceHiddenText {
     font-family: var(--font-sans);
-    font-size: .9rem;
+    font-size: .85rem;
     opacity: 0%;
     transition: .3s;
     width: max-content;
@@ -37,17 +44,18 @@
     filter: blur(0px);
 }
 
-.hoursSinceDiv:hover .hoursSinceHiddenText {
+
+.contentMainDiv:hover .hoursSinceHiddenText {
     opacity: 100%;
 }
 
 .hoursSinceDiv {
     display: grid;
-    grid-template-columns: 15em 10em;
+    grid-template-columns: 15em 11em;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-
+    text-align: center;
 }
 
 .hoursSinceText {
@@ -56,4 +64,13 @@
     padding-top: 1.4em;
     font-size: var(--fsz-pri);
     text-align: left;
+}
+
+@media only screen and (max-device-width: 500px) {
+    .hoursSince {
+        filter: blur(0px);
+    }
+    .hoursSinceHiddenText {
+        opacity: 100%;
+    }
 }
