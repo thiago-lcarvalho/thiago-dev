@@ -1,6 +1,7 @@
 import styles from './content.module.css';
 import moment from 'moment';
 import Paper from "@mui/material/Paper";
+import { SiJavascript, SiHtml5, SiCss3 } from 'react-icons/si'
 
 
 export function Content() {
@@ -14,8 +15,18 @@ export function Content() {
     return (
         <section>
             <div className={styles.contentMainWrapper}>
+                <ul className={styles.ul1}>
+                    <li>
+                        <SiJavascript size={40} />
+                    </li>
+                    <li>
+                        <SiHtml5 size={40} />
+                    </li>
+                    <li>
+                        <SiCss3 size={40} />
+                    </li>
+                </ul>
                 <div className={styles.paperDiv}>
-                {/* change to simple card and use glassmorphism/ put border radius */}
                     <div className={styles.contentMainDiv}>
                         <div className={styles.hoursSinceDiv} >
                             <span className={styles.hoursSince}>{hoursSinceStartedDev}
