@@ -16,12 +16,26 @@
 }
 
 .paperDiv {
-    
+    width: fit-content;
+    height: fit-content;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    transition: .3s;
+
+}
+
+.paperDiv:hover {
+    background: #ffffff47;
+    box-shadow: -12px -12px 33px #e6e6e673,
+        12px 12px 33px #ffffffb3;
 }
 
 .hoursSince {
     font-size: 5rem;
-    font-family: var(--font-sans); 
+    font-family: var(--font-sans);
     font-weight: 800;
     color: #624174;
     background-image: -webkit-linear-gradient(0deg, #624174 10%, #6740e7 100%);
@@ -32,6 +46,8 @@
     transition: .3s;
 }
 
+
+
 .hoursSinceHiddenText {
     font-family: var(--font-sans);
     font-size: .85rem;
@@ -40,12 +56,12 @@
     width: max-content;
 }
 
-.hoursSinceDiv:hover .hoursSince {
+.paperDiv:hover .hoursSince {
     filter: blur(0px);
 }
 
 
-.contentMainDiv:hover .hoursSinceHiddenText {
+.paperDiv:hover .hoursSinceHiddenText {
     opacity: 100%;
 }
 
@@ -70,6 +86,7 @@
     .hoursSince {
         filter: blur(0px);
     }
+
     .hoursSinceHiddenText {
         opacity: 100%;
     }

@@ -15,7 +15,6 @@ export function Content() {
         <section>
             <div className={styles.contentMainWrapper}>
                 <div className={styles.paperDiv}>
-                <Paper elevation={6} sx={{color: 'none'}} >
                 {/* change to simple card and use glassmorphism/ put border radius */}
                     <div className={styles.contentMainDiv}>
                         <div className={styles.hoursSinceDiv} >
@@ -27,7 +26,6 @@ export function Content() {
                         </div>
                         <span className={styles.hoursSinceHiddenText}>on 06/07/2022 I made the decision to become a developer</span>
                     </div>
-                </Paper>
                 </div>
             </div>
         </section>
