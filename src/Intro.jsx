@@ -16,7 +16,7 @@ export function Intro() {
             <div>
             <div className={styles.contentIntro}>
                 <span className={styles.IntroHello}>Hello, my name is </span>
-                <span className={styles.IntroName}>Thiago Carvalho</span>
+                <span className={styles.IntroName}>Tiago Carvalho</span>
             </div>
             <h1 className={styles.frontTitle}>
                 Frontend Developer
