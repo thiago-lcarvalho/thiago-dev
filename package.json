@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "homepage": "https://thiago-lcarvalho.github.io/thiago-dev"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
