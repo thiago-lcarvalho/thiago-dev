@@ -20,7 +20,6 @@ export function Header() {
 
         return (
             <>
-            <a name="top"></a>
                 <header className={styles.header}>
                     <div className={styles.nameAndRole}>
                         <a href="#top">
