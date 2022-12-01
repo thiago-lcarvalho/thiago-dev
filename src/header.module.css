@@ -9,7 +9,7 @@ header {
     position: sticky;
     top: 0;
     width: 100vw;
-    gap: 66%;
+    gap: 80%;
     justify-content: center;
     height: 12vh;
     display: flex;
@@ -56,21 +56,21 @@ a:hover {
 }
 
 .leftHeader {
-    width: 40px;
+    width: 2.5rem;
     position: fixed;
     bottom: 0px;
-    left: 40px;
+    left: 2.5rem;
     right: auto;
     z-index: 10;
     padding-bottom: 2em;
-    
+
 }
 
 .rightHeader {
-    width: 40px;
+    width: 2.5rem;
     position: fixed;
     bottom: 0px;
-    right: 40px;
+    right: 2.5rem;
     left: auto;
     z-index: 11;
     writing-mode: vertical-lr;
@@ -81,7 +81,7 @@ a:hover {
     width: 40px;
     position: fixed;
     bottom: 50%;
-    right: 10rem;
+    right: 3.2rem;
     left: auto;
     z-index: 11;
 }

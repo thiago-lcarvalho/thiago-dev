@@ -16,7 +16,7 @@ export function Header() {
                     </a>
                 </div>
                 <div className={styles.finalHeader}>
-                    <a href="#">next</a>
+                    <a href="#3">next</a>
                     <a href="././cv.pdf" target="blank">cv</a>
                 </div>
             </header>
