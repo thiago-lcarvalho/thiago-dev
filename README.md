@@ -10,3 +10,5 @@ I'LL FINISH THIS WEBSITE THIS TIME!!!!!
 23/11 21:12 - lot of wip but satisfied with structure, still missing some portability and scroll snapping 🐙
 
 24/11 11:59 - added media queries finally, started using MUI but probably changing in the near future ⏱️
+
+1/12 10:59 - added link to cd, starting to add smooth scrolling on side bar, removing top bar links
