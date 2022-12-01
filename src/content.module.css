@@ -6,18 +6,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
 
 }
 
-ul {
+.ul1 {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    transition: .3s;
+    opacity: 0%;
   }
+
+  .paperDiv:hover .ul1 {
+    opacity: 100%;
+}
+
   
-  li {
+.ul1 li {
     float: left;
   }
 
@@ -48,8 +59,8 @@ ul {
     font-size: 5rem;
     font-family: var(--font-sans);
     font-weight: 800;
-    color: #624174;
-    background-image: -webkit-linear-gradient(0deg, #624174 10%, #6740e7 100%);
+    background: rgb(123, 195, 34);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,230,216,1) 29%, rgba(187,255,19,1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

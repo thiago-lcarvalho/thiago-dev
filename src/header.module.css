@@ -76,6 +76,16 @@ a:hover {
     padding-bottom: 2em;
 }
 
+.selectorRight {
+    width: 40px;
+    position: fixed;
+    bottom: 50%;
+    right: 10rem;
+    left: auto;
+    z-index: 11;
+}
+
+
 .linkButtons {
     margin-bottom: 8px;
 }

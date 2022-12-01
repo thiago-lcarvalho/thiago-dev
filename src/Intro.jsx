@@ -5,13 +5,10 @@ import { Hourglass } from 'phosphor-react';
 
 
 export function Intro() {
-    var timeStartedDev = moment("2022-07-06T18:00:00Z");
-    var timeNow = moment();
-    const hoursSinceStartedDev = (timeNow.diff(timeStartedDev, 'hours'))
-
 
     return (
         <section>
+        <a name="1"></a>
         <div className={styles.introMainWrapper}>
             <div>
             <div className={styles.contentIntro}>
