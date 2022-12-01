@@ -1,7 +1,7 @@
 import { Header } from './Header'
 import { Intro } from './Intro'
 import { Content } from './Content'
-import { Bulk } from './Bulk'
+import { Footer } from './Footer'
 
 
 export function App() {
@@ -11,7 +11,7 @@ export function App() {
       <Header />
       <Intro />
       <Content />
-      <Bulk />
+      <Footer />
       </>
   )
 }

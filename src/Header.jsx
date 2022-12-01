@@ -48,7 +48,7 @@ export function Header() {
                     <a href="#2"><BsFillSquareFill color="#40EE97"/></a>
                 </li>
                 <li>
-                    <a href="">3</a>
+                    <a href="#3"><BsFillSquareFill color="#ee4080"/></a>
                 </li>
             </ul>
         </>
