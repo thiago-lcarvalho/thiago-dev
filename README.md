@@ -12,3 +12,5 @@ I'LL FINISH THIS WEBSITE THIS TIME!!!!!
 24/11 11:59 - added media queries finally, started using MUI but probably changing in the near future ⏱️
 
 1/12 10:59 - added link to cd, starting to add smooth scrolling on side bar, removing top bar links
+
+1/12 12:10 - finished side buttons for navigation, adding contact footer
