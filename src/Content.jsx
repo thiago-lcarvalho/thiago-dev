@@ -1,23 +1,30 @@
 import styles from './content.module.css';
 import moment from 'moment';
-import Paper from "@mui/material/Paper";
-import { SiJavascript, SiHtml5, SiCss3 } from 'react-icons/si'
-
-
-
+import { StackOverflowLogo, FileJsx, FileHtml, FileCss, Code, BracketsCurly, GitBranch, GitPullRequest, GitDiff, TerminalWindow } from "phosphor-react";
 
 export function Content() {
+
 
     var timeStartedDev = moment("2022-07-06T18:00:00Z");
     var timeNow = moment();
     const hoursSinceStartedDev = (timeNow.diff(timeStartedDev, 'hours'))
 
-
-
     return (
         <section>
             <a name="2"></a>
             <div className={styles.contentMainWrapper}>
+                <div className={styles.iconsBackground}>
+                    <StackOverflowLogo className={styles.iconsBackground1} size={45} />
+                    <FileJsx className={styles.iconsBackground2} size={45} />
+                    <FileHtml className={styles.iconsBackground3} size={45} />
+                    <FileCss className={styles.iconsBackground4} size={45} />
+                    <Code className={styles.iconsBackground5} size={45} />
+                    <BracketsCurly className={styles.iconsBackground6} size={45} />
+                    <GitBranch className={styles.iconsBackground7} size={45} />
+                    <GitPullRequest className={styles.iconsBackground8} size={45} />
+                    <GitDiff className={styles.iconsBackground9} size={45} />
+                    <TerminalWindow className={styles.iconsBackground0} size={45} />
+                </div>
                 <div className={styles.paperDiv}>
                     <div className={styles.contentMainDiv}>
                         <div className={styles.hoursSinceDiv} >

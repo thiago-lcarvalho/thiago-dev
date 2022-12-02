@@ -1,12 +1,148 @@
 .contentMainWrapper {
-    padding-left: 96px;
-    padding-right: 96px;
+    padding-left: 70px;
+    padding-right: 70px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 
+}
+
+.contentMainWrapper:hover .iconsBackground1 {
+    opacity: 100%;
+}
+
+.contentMainWrapper:hover .iconsBackground2 {
+    opacity: 100%;
+}
+
+.contentMainWrapper:hover .iconsBackground3 {
+    opacity: 100%;
+}
+
+.contentMainWrapper:hover .iconsBackground4 {
+    opacity: 100%;
+}
+
+.contentMainWrapper:hover .iconsBackground5 {
+    opacity: 100%;
+}
+
+.contentMainWrapper:hover .iconsBackground6 {
+    opacity: 100%;
+}
+
+.contentMainWrapper:hover .iconsBackground7 {
+    opacity: 100%;
+}
+
+.contentMainWrapper:hover .iconsBackground8 {
+    opacity: 100%;
+}
+
+.contentMainWrapper:hover .iconsBackground9 {
+    opacity: 100%;
+}
+
+.contentMainWrapper:hover .iconsBackground0 {
+    opacity: 100%;
+}
+
+.iconsBackground {
+    height: max-content;
+    width: max-content;
+    color: #275d52;
+}
+
+.iconsBackground1 {
+    position: absolute;
+    top:10%;
+    right: 30%;
+    transition: 1s;
+    transition-delay: 200ms;
+    opacity: 0%;
+}
+
+.iconsBackground2 {
+    position: absolute;
+    top: 10%;
+    right: 45%;
+    transition: 1s;
+    transition-delay: 400ms;
+    opacity: 0%;
+}
+
+.iconsBackground3 {
+    position: absolute;
+    top: 50%;
+    right: 22%;
+    transition: 1s;
+    transition-delay: 600ms;
+    opacity: 0%;
+}
+
+.iconsBackground4 {
+    position: absolute;
+    top: 14%;
+    right: 55%;
+    transition: 1s;
+    transition-delay: 800ms;
+    opacity: 0%;
+}
+
+.iconsBackground5 {
+    position: absolute;
+    top: 60%;
+    right: 80%;
+    transition: 1s;
+    transition-delay: 1000ms;
+    opacity: 0%;
+}
+
+.iconsBackground6 {
+    position: absolute;
+    top: 76%;
+    right: 43%;
+    transition: 1s;
+    transition-delay: 1400ms;
+    opacity: 0%;
+}
+
+.iconsBackground7 {
+    position: absolute;
+    top: 35%;
+    right: 80%;
+    transition: 1s;
+    transition-delay: 1500ms;
+    opacity: 0%;
+}
+
+.iconsBackground8 {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    transition: 1s;
+    transition-delay: 1800ms;
+    opacity: 0%;
+}
+
+.iconsBackground9 {
+    position: absolute;
+    top: 20%;
+    right: 70%;
+    transition: 1s;
+    transition-delay: 2000ms;
+    opacity: 0%;
+}
+
+.iconsBackground0 {
+    position: absolute;
+    top: 78%;
+    right: 30%;
+    transition: 1s;
+    transition-delay: 2200ms;
+    opacity: 0%;
 }
 
 .ul1 {
@@ -22,7 +158,7 @@
     opacity: 0%;
   }
 
-  .paperDiv:hover .ul1 {
+  .contentMainWrapper:hover .ul1 {
     opacity: 100%;
 }
 
@@ -37,6 +173,7 @@
 }
 
 .paperDiv {
+    position: absolute;
     width: fit-content;
     height: fit-content;
     padding: 12px;
@@ -48,7 +185,7 @@
 
 }
 
-.paperDiv:hover {
+.contentMainWrapper:hover .paperDiv {
     background: #ffffff47;
     box-shadow: -12px -12px 33px #e6e6e673,
         12px 12px 33px #ffffffb3;
@@ -77,12 +214,12 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,230,216,1) 29%, 
     width: max-content;
 }
 
-.paperDiv:hover .hoursSince {
+.contentMainWrapper:hover .hoursSince {
     filter: blur(0px);
 }
 
 
-.paperDiv:hover .hoursSinceHiddenText {
+.contentMainWrapper:hover .hoursSinceHiddenText {
     opacity: 100%;
 }
 
