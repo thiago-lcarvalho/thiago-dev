@@ -4,6 +4,7 @@ import { RiLightbulbLine } from "react-icons/Ri";
 import { RiGithubFill, RiLinkedinFill, RiInstagramFill } from 'react-icons/Ri'
 import { useEffect, useState } from "react";
 import { BsFillSquareFill } from "react-icons/Bs";
+import { MdOutlineEmail } from "react-icons/Md";
 
 export function Header() {
 
@@ -36,19 +37,21 @@ export function Header() {
                         <RiInstagramFill size={25} title="Instagram Profile Icon" />
                     </a>
                 </ul>
-            </div>
-            <div className={styles.rightHeader} >
-                <a href="mailto:thiagoafonso07@hotmail.com">thiagoafonso07@hotmail.com</a>
+                <ul title="Send E-mail" className={styles.linkButtons}>
+                    <a href="mailto:thiagoafonso07@hotmail.com" target="blank" title="Send E-mail">
+                        <MdOutlineEmail size={25} />
+                    </a>
+                </ul>
             </div>
             <ul className={styles.selectorRight}>
                 <li>
-                    <a href="#1"><BsFillSquareFill color="#6640E7"/></a>
+                    <a href="#1"><BsFillSquareFill color="#6640E7" /></a>
                 </li>
                 <li>
-                    <a href="#2"><BsFillSquareFill color="#40EE97"/></a>
+                    <a href="#2"><BsFillSquareFill color="#40EE97" /></a>
                 </li>
                 <li>
-                    <a href="#3"><BsFillSquareFill color="#ee4080"/></a>
+                    <a href="#3"><BsFillSquareFill color="#ee4080" /></a>
                 </li>
             </ul>
         </>
