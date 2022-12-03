@@ -13,4 +13,6 @@ I'LL FINISH THIS WEBSITE THIS TIME!!!!!
 
 1/12 10:59 - added link to cd, starting to add smooth scrolling on side bar, removing top bar links
 
-1/12 12:10 - finished side buttons for navigation, adding contact footer
+1/12 12:10 - finished side buttons for navigation, adding contact footer!!!!!
+
+2/12 22:22 - changed email button to leftHeader, changed to Afonso, baby helped me 🐤
