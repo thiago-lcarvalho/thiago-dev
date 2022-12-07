@@ -1,8 +1,8 @@
-import styles from './content.module.css';
+import styles from './second.module.css';
 import moment from 'moment';
 import { StackOverflowLogo, FileJsx, FileHtml, FileCss, Code, BracketsCurly, GitBranch, GitPullRequest, GitDiff, TerminalWindow } from "phosphor-react";
 
-export function Content() {
+export function Second() {
 
 
     var timeStartedDev = moment("2022-07-06T18:00:00Z");

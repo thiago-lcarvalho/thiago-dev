@@ -1,6 +1,6 @@
-import styles from './footer.module.css'
+import styles from './third.module.css'
 
-export function Footer() {
+export function Third() {
     return (
         <>
         <a name="3"></a>

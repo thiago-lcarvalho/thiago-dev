@@ -1,7 +1,7 @@
 import { Header } from './Header'
-import { Intro } from './Intro'
-import { Content } from './Content'
-import { Footer } from './Footer'
+import { First } from './First'
+import { Second } from './Second'
+import { Third } from './Third'
 
 
 export function App() {
@@ -9,9 +9,9 @@ export function App() {
   return (
       <>
       <Header />
-      <Intro />
-      <Content />
-      <Footer />
+      <First />
+      <Second />
+      <Third />
       </>
   )
 }

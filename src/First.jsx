@@ -1,11 +1,11 @@
-import styles from './intro.module.css';
+import styles from './first.module.css';
 import moment from 'moment';
 import { Hourglass } from 'phosphor-react';
 
 
 
 
-export function Intro() {
+export function First() {
 
     return (
         <section>
