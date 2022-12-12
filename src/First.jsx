@@ -1,6 +1,5 @@
 import styles from './first.module.css';
-import moment from 'moment';
-import { Hourglass } from 'phosphor-react';
+import Avatar from '@mui/material/Avatar';
 
 
 
@@ -11,7 +10,8 @@ export function First() {
         <section>
             <a name="1"></a>
             <div className={styles.introMainWrapper}>
-                <div>
+                <div className={styles.subMainDiv}>
+                <Avatar className={styles.introPhoto} sx={{ width: 100, height: 100 }} alt="Thiago Afonso" src="././important-photo.jpeg"/>
                     <div className={styles.contentIntro}>
                         <span className={styles.IntroHello}>Hello, my name is </span>
                         <span className={styles.IntroName}>Thiago Afonso</span>
