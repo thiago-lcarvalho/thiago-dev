@@ -1,6 +1,5 @@
 I'LL FINISH THIS WEBSITE THIS TIME!!!!!
 
-
 ---- untracked before that
 
 23/11 02:57 - finally managed to get momentjs working the way I wanted! :) ton of work done but still a lot to do!
@@ -16,3 +15,5 @@ I'LL FINISH THIS WEBSITE THIS TIME!!!!!
 1/12 12:10 - finished side buttons for navigation, adding contact footer!!!!!
 
 2/12 22:22 - changed email button to leftHeader, changed to Afonso, baby helped me 🐤
+
+12/12 11:48 - one section left... added some mui components to clean things
