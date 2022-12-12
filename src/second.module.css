@@ -10,27 +10,16 @@
 }
 
 
-.ul1 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.stackDiv {
     margin-top: 1rem;
     transition: .3s;
     opacity: 0%;
 }
 
-.paperDiv:hover .ul1 {
+.paperDiv:hover .stackDiv {
     opacity: 100%;
 }
 
-
-.ul1 li {
-    float: left;
-}
 
 .contentMainDiv {
     text-align: center;

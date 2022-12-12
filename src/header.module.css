@@ -55,6 +55,7 @@ a:hover {
     opacity: 100%;
 }
 
+
 .leftHeader {
     width: 2.5rem;
     position: fixed;
@@ -85,7 +86,6 @@ a:hover {
     left: auto;
     z-index: 11;
 }
-
 
 .linkButtons {
     margin-bottom: 8px;
