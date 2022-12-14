@@ -1,7 +1,7 @@
 .contentMainWrapper {
 	padding-left: 96px;
 	padding-right: 96px;
-	margin: 0px 191px;
+	margin: 0px 30px;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -12,21 +12,25 @@
 .box1Div {
 	margin: 1em;
 	font-family: var(--font-sans);
-	border-radius: 50px;
+	border-radius: 20px;
 	background: linear-gradient(145deg, #f0f0f0, #b9a8ff);
 	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #d3cfff;
 	display: flex;
     flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	width: 20rem;
-	height: 35rem;
+	height: 30rem;
+}
+
+.box1Heading {
+    padding: 1em;
+    font-weight: bold;
+    font-size: var(--fsz-heading);
 }
 
 .box2Div {
 	margin: 1em;
 	font-family: var(--font-mono);
-	border-radius: 50px;
+	border-radius: 20px;
 	background: linear-gradient(145deg, #f0f0f0, #adfaec);
 	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #dafff0;
 	display: flex;
@@ -34,13 +38,13 @@
 	justify-content: center;
 	align-items: center;
 	width: 20rem;
-	height: 35rem;
+	height: 30rem;
 }
 
 .box3Div {
 	margin: 1em;
 	font-family: var(--font-mono);
-	border-radius: 50px;
+	border-radius: 20px;
 	background: linear-gradient(145deg, #f0f0f0, #ef9697);
 	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #ffe4e4;
 	display: flex;
@@ -48,5 +52,5 @@
 	justify-content: center;
 	align-items: center;
 	width: 20rem;
-	height: 35rem;
+	height: 30rem;
 }

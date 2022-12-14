@@ -8,14 +8,16 @@ export function Third() {
 			<a name="3"></a>
 			<div className={styles.contentMainWrapper}>
 				<div className={styles.box1Div}>
-                    <h1>lorem ipsum</h1>
-                    <p>lorem ipsum blablablabla ok ok</p>
-                    <p>lorem blabla ok </p>
+					<div className={styles.box1Heading}>
+						<span>lorem ipsum</span>
+					</div>
+					<div className={styles.box1Content}>
+						<p>lorem ipsum blablablabla ok ok</p>
+						<p>lorem blabla ok </p>
+					</div>
 				</div>
-				<div className={styles.box2Div}>
-				</div>
-				<div className={styles.box3Div}>
-				</div>
+				<div className={styles.box2Div}></div>
+				<div className={styles.box3Div}></div>
 			</div>
 		</section>
 	);
