@@ -1,7 +1,6 @@
 :root {
-    --font-sans: "Poppins", "Inter", "San Francisco", "SF Pro Text", sans-serif;
-    --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-    --font-hand: "Just Another Hand", cursive;
+    --font-sans: "Ubuntu", "Poppins", "Inter", "San Francisco", "SF Pro Text", sans-serif;
+    --font-mono: "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     --easing: cubic-bezier(0.65, 0.05, 0.36, 1);
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     --white: #fff;

@@ -90,9 +90,10 @@
 .hoursSinceText {
     font-family: var(--font-mono);
     width: fit-content;
-    padding-top: 1.4em;
+    padding-top: .9em;
     font-size: var(--fsz-pri);
     text-align: left;
+    line-height: 1.4rem;
 }
 
 @media only screen and (max-device-width: 500px) {
