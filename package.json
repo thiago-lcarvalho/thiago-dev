@@ -15,6 +15,7 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.10.15",
+    "axios": "^1.2.1",
     "framer-motion": "^7.6.17",
     "moment": "^2.29.4",
     "phosphor-react": "^1.4.1",
