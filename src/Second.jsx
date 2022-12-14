@@ -11,32 +11,14 @@ import {
 	GitPullRequest,
 	GitDiff,
 	TerminalWindow,
-    Activity,
+	Activity,
 } from 'phosphor-react';
 import Stack from '@mui/material/Stack';
-import GitHubCalendar from 'react-github-calendar';
-import { useState, useEffect } from 'react';
-
 
 export function Second() {
-
-    const [contri, setContri] = useState([]);
-
-   useEffect(() => {
-         getContri()
-   }, []);
-
-   const getContri = async () => {
-    const response = await fetch('https://github-contributions-api.jogruber.de/v4/thiago-lcarvalho');
-    const data = await response.json();
-    setContri(data);
-   }
-   
 	var timeStartedDev = moment('2022-07-06T18:00:00Z');
 	var timeNow = moment();
 	const hoursSinceStartedDev = timeNow.diff(timeStartedDev, 'hours');
-
-    console.log(contri)
 
 	return (
 		<section>
@@ -221,22 +203,8 @@ export function Second() {
 						</svg>
 					</Stack>
 				</div>
-                <div className={styles.secondBox}>
-                    <div className={styles.gitHubCalendar}>
-                <GitHubCalendar
-					username="thiago-lcarvalho"
-					hideColorLegend
-                    hideMonthLabels
-                    blockSize={0}
-                    labels={{
-                        totalCount: '{{count}}',
-                    }}
-				/>
-                <span className={styles.hoursSinceText}>
-								github contributions
-							</span>
-                </div>
-                </div>
+				<div className={styles.secondBox}>
+				</div>
 			</div>
 		</section>
 	);

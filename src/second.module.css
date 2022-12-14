@@ -96,23 +96,6 @@
     line-height: 1.4rem;
 }
 
-.gitHubCalendar {
-
-}
-
-.gitHubCalendar div{
-        font-size: 5rem;
-        font-family: var(--font-sans);
-        font-weight: 800;
-        background: rgb(123, 195, 34);
-        background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(4, 230, 216, 1) 29%, rgba(187, 255, 19, 1) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin: 0;
-        padding: 0;
-        transition: .3s;
-}
 
 @media only screen and (max-device-width: 500px) {
     .hoursSince {
