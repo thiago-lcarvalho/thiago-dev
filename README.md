@@ -19,3 +19,5 @@ I'LL FINISH THIS WEBSITE THIS TIME!!!!!
 12/12 11:48 - one section left... added some mui components to clean things
 
 14/12 10:45 - so many changes, so much to do... added avatar 🤖
+
+14/12 16:41 - lot of changes, finished first card on last section, happy with results so far!
