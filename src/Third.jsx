@@ -3,9 +3,9 @@ import GitHubCalendar from 'react-github-calendar';
 import resSpotify from './resources/api';
 
 export function Third() {
-
 	const spotifyTrack = resSpotify.data.items[0].track.name;
-	const spotifyTrackURL = resSpotify.data.items[0].track.external_urls.spotify;
+	const spotifyTrackURL =
+		resSpotify.data.items[0].track.external_urls.spotify;
 	const spotifyTrackIMG = resSpotify.data.items[0].track.album.images[1].url;
 	const spotifyTrackArtist = resSpotify.data.items[0].track.artists[0].name;
 
@@ -31,13 +31,6 @@ export function Third() {
 			<a name="3"></a>
 			<div className={styles.contentMainWrapper}>
 				<div className={styles.box1Div}>
-					<div className={styles.box1Heading}>
-						<span>lorem ipsum</span>
-					</div>
-					<div className={styles.box1Content}>
-						<p>lorem ipsum blablablabla ok ok</p>
-						<p>lorem blabla ok </p>
-					</div>
 				</div>
 				<a
 					className={styles.box2link}
@@ -73,7 +66,9 @@ export function Third() {
 							src={spotifyTrackIMG}
 							alt=""
 						/>
-						{spotifyTrack} <br /> by <br /> {spotifyTrackArtist}
+						<span>
+							{spotifyTrack} <br /> by <br /> {spotifyTrackArtist}
+						</span>
 					</a>
 				</div>
 			</div>

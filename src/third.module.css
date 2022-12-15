@@ -43,9 +43,11 @@
 	align-items: center;
 	width: 20rem;
 	height: 30rem;
+	padding: 5em 0;
 }
 
 .box3Div {
+	padding-bottom: 1.5em;
 	margin: 1em;
 	font-family: var(--font-mono);
 	border-radius: 20px;
