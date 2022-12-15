@@ -1,7 +1,14 @@
 import styles from './third.module.css';
 import GitHubCalendar from 'react-github-calendar';
+import api  from './resources/api'
 
 export function Third() {
+
+    // const spotifyTrack = api.data.items[0].track.name;
+    const spotifyTrackIMG = api.data.item.album.images[1].url
+    const spotifyTrackURL = api.data.item.external_urls.spotify
+    const spotifyTrack = api.data.item.name;
+    console.log(spotifyTrackIMG)
 
     const sinceStart = contributions => {
         const currentYear = new Date().getFullYear();
@@ -38,6 +45,7 @@ export function Third() {
 				<div className={styles.box2Div}>
                 <div className={styles.gitHubCalendar}>
 						<GitHubCalendar
+                            color={"#4DF088"}
 							username="thiago-lcarvalho"
                             transformData={sinceStart}
 							hideColorLegend
@@ -54,7 +62,11 @@ export function Third() {
 					</div>
                 </div>
                 </a>
-				<div className={styles.box3Div}></div>
+				<div className={styles.box3Div}>
+                    <a href={spotifyTrackURL} target="blank">
+                        <img src={spotifyTrackIMG} alt="" />
+                        {spotifyTrack}</a>
+                </div>
 			</div>
 		</section>
 	);

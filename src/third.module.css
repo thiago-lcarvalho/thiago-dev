@@ -90,3 +90,16 @@
     padding: 0;
     transition: .3s;
 }
+
+.box3Div a {
+    opacity: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box3Div img {
+    border-radius: 2px;
+    height: 200px;
+    width: 200px;
+}
