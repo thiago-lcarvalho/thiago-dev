@@ -1,12 +1,13 @@
 import styles from './third.module.css';
 import GitHubCalendar from 'react-github-calendar';
-import res from './resources/api';
+import resSpotify from './resources/api';
 
 export function Third() {
-	const spotifyTrack = res.data.items[0].track.name;
-	const spotifyTrackURL = res.data.items[0].track.external_urls.spotify;
-	const spotifyTrackIMG = res.data.items[0].track.album.images[1].url;
-	const spotifyTrackArtist = res.data.items[0].track.artists[0].name;
+
+	const spotifyTrack = resSpotify.data.items[0].track.name;
+	const spotifyTrackURL = resSpotify.data.items[0].track.external_urls.spotify;
+	const spotifyTrackIMG = resSpotify.data.items[0].track.album.images[1].url;
+	const spotifyTrackArtist = resSpotify.data.items[0].track.artists[0].name;
 
 	const sinceStart = (contributions) => {
 		const currentYear = new Date().getFullYear();
@@ -72,7 +73,7 @@ export function Third() {
 							src={spotifyTrackIMG}
 							alt=""
 						/>
-						{spotifyTrack} by {spotifyTrackArtist}
+						{spotifyTrack} <br /> by <br /> {spotifyTrackArtist}
 					</a>
 				</div>
 			</div>
