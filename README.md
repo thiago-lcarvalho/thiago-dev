@@ -22,4 +22,4 @@ I'LL FINISH THIS WEBSITE THIS TIME!!!!!
 
 14/12 16:41 - lot of changes, finished first card on last section, happy with results so far!
 
-15/12 15:48 - added mspotify tracker with spotify api! 
+15/12 15:48 - added some features with spotify api! 
