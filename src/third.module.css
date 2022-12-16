@@ -4,9 +4,16 @@
 	margin: 0px 30px;
 	position: relative;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	font-family: var(--font-sans);
+}
+
+.boxDivs {
+	display: flex;
+	flex-direction: row;
 }
 
 .box1Div {
@@ -21,6 +28,11 @@
 	align-items: center;
 	width: 20rem;
 	height: 25rem;
+}
+
+.nasaAPI {
+	border: 2px solid #0c58d3;
+	border-radius: 20px;
 }
 
 .box1Div span {
