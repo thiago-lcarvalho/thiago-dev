@@ -57,6 +57,7 @@
     -webkit-text-fill-color: transparent;
     filter: blur(10px);
     transition: .3s;
+    width: fit-content;
 }
 
 
@@ -80,7 +81,7 @@
 
 .hoursSinceDiv {
     display: grid;
-    grid-template-columns: 15em 11em;
+    grid-template-columns: 11.5em 11em;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -88,12 +89,12 @@
 }
 
 .hoursSinceText {
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     width: fit-content;
     padding-top: .9em;
     font-size: var(--fsz-pri);
     text-align: left;
-    line-height: 1.4rem;
+    line-height: 1.3rem;    
 }
 
 

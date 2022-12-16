@@ -16,92 +16,119 @@
 	background: linear-gradient(145deg, #f0f0f0, #b9a8ff);
 	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #d3cfff;
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 20rem;
-	height: 30rem;
+	height: 25rem;
 }
 
-.box1Heading {
-    padding: 1em;
-    font-weight: bold;
-    font-size: var(--fsz-heading);
+.box1Div span {
+	font-size: var(--fsz-pri);
+	padding-top: 1em;
+	font-family: var(--font-sans);
+}
+
+.box1Div a {
+	opacity: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.box1Div img {
+	border-radius: 2px;
+	height: 200px;
+	width: 200px;
 }
 
 .box2link {
-    opacity: 100%;
+	opacity: 100%;
 }
 
 .box2Div {
 	margin: 1em;
-	font-family: var(--font-mono);
+	font-family: var(--font-sans);
 	border-radius: 20px;
 	background: linear-gradient(145deg, #f0f0f0, #adfaec);
 	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #dafff0;
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 20rem;
-	height: 30rem;
-	padding: 5em 0;
+	height: 25rem;
 }
 
 .box3Div {
-	padding-bottom: 1.5em;
 	margin: 1em;
-	font-family: var(--font-mono);
 	border-radius: 20px;
 	background: linear-gradient(145deg, #f0f0f0, #ef9697);
 	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #ffe4e4;
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 20rem;
-	height: 30rem;
+	height: 25rem;
 }
 
-.gitHubCalendar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.gitHubCalendar article {
-    text-align: center;
-}
-
-.gitHubCalendar footer {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
-.gitHubCalendar div{
-    font-size: 6rem;
-    font-family: var(--font-sans);
-    font-weight: 800;
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(4, 230, 216, 1) 29%, rgba(187, 255, 19, 1) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0;
-    padding: 0;
-    transition: .3s;
+.box3Div span {
+	font-size: var(--fsz-pri);
+	padding-top: 1em;
+	font-family: var(--font-sans);
 }
 
 .box3Div a {
-    opacity: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	opacity: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .box3Div img {
-    border-radius: 2px;
-    height: 200px;
-    width: 200px;
+	border-radius: 2px;
+	height: 200px;
+	width: 200px;
+}
+
+.gitHubCalendar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.gitHubCalendar article {
+	text-align: center;
+}
+
+.gitHubCalendar footer {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.gitHubCalendar div {
+	font-size: 6rem;
+	font-family: var(--font-sans);
+	font-weight: 800;
+	background: linear-gradient(
+		0deg,
+		rgba(34, 193, 195, 1) 0%,
+		rgba(4, 230, 216, 1) 29%,
+		rgba(187, 255, 19, 1) 100%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin: 0;
+	padding: 0;
+	transition: 0.3s;
+}
+
+.gitHubCalendarText {
+	font-family: var(--font-sans);
 }

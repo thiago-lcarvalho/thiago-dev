@@ -93,7 +93,7 @@
 }
 
 .hoursSinceText {
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     width: fit-content;
     padding-top: 1.4em;
     font-size: var(--fsz-pri);

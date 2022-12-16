@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { BsFillSquareFill } from "react-icons/Bs";
 import { MdOutlineEmail } from "react-icons/Md";
 
+
 export function Header() {
 
     return (
@@ -13,7 +14,7 @@ export function Header() {
             <header className={styles.header}>
                 <div className={styles.nameAndRole}>
                     <a href="#">
-                        <Atom className={styles.atom} size={50} />
+                        <Atom className={styles.atom} size={40} />
                     </a>
                 </div>
                 <div className={styles.finalHeader}>
