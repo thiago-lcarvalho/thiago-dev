@@ -5,11 +5,30 @@
     text-decoration: none;
 }
 
+.introPhoto {
+        grid-column: 1;
+        grid-row: 1;
+        opacity: 0%;   
+        transition: .3s;
+}
+
+.nameAndRole:hover .introPhoto {
+    opacity: 100%;
+}
+
+.atom {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+
+
 header {
     position: sticky;
     top: 0;
     width: 100vw;
-    gap: 80%;
+    gap: 60%;
     justify-content: center;
     height: 12vh;
     display: flex;
@@ -34,8 +53,28 @@ link {
     font-family: var(--font-sans);
 }
 
-.nameAndRole {
+.nameAndRole a {
     padding: 0;
+    display: grid;
+    opacity: 100%;
+    
+}
+
+.nameAndRole {
+    display: flex;
+}
+
+.nameAndRole span {
+    width: max-content;
+    line-height: 2.5em;
+    padding-left: .5em;
+    font-family: var(--font-sans);
+    opacity: 0%;
+    transition: .3s;
+}
+
+.nameAndRole:hover span {
+    opacity: 100%;
 }
 
 .finalHeader {
