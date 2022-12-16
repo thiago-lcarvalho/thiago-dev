@@ -22,4 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-apiKeys.jsx
+spotifyAPIkey.jsx
+nasaAPIkey.jsx
