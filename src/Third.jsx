@@ -9,22 +9,14 @@ import { useEffect, useState } from 'react';
 export function Third() {
 	const [resNasa, setResNasa] = useState([]);
 	const [loading, setLoading] = useState(false);
-
+	const NASA_API_URL =
+		`https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=` + NASA_API_KEY;
 	useEffect(() => {
-		axios
-			.get(
-				`https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=` +
-					NASA_API_KEY
-			)
-			.then((res) => {
-				setResNasa(res);
-				setLoading(true);
-				console.log(loading);
-				console.log(resNasa);
-			});
+		axios.get(NASA_API_URL).then((res) => {
+			setResNasa(res);
+			setLoading(true);
+		});
 	}, []);
-	console.log(loading);
-	console.log(resNasa.data);
 
 	function randomAsteroid(arr) {
 		const randomIndex = Math.floor(Math.random() * arr.length);
