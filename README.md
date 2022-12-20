@@ -22,4 +22,6 @@ I'LL FINISH THIS WEBSITE THIS TIME!!!!!
 
 14/12 16:41 - lot of changes, finished first card on last section, happy with results so far!
 
-15/12 15:48 - added some features with spotify api! 
+15/12 15:48 - added some features with spotify api!
+
+20/12 11:47 - i forgot to update the README.md file, lot of updates like loading api before showing screen, new spotify card, etc...
