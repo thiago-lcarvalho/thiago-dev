@@ -7,7 +7,6 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: rgba(0, 0, 0, 0.9);
 	transition: 1s 0.4s;
 }
 
@@ -21,7 +20,6 @@
 	bottom: 0;
 	right: 0;
 }
-
 
 .contentMainWrapper {
 	padding-left: 96px;
@@ -77,6 +75,35 @@
 	border-radius: 2px;
 	height: 200px;
 	width: 200px;
+}
+
+.divSpotify {
+	background-color: #d8f5e3;
+	border: 2px solid #1cd760;
+	border-radius: 8px;
+	display: flex;
+	padding: 1em 0;
+	margin: 1em 0;
+}
+
+.divSpotify img {
+	width: 50px;
+	height: 50px;
+	margin: 0 .5em;
+}
+
+.divSpotifyText {
+	font-family: var(--font-sans);
+	font-weight: normal;
+	margin: 0 .5em 0 0;
+	display: flex;
+	text-align: start;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.divSpotifyTitle {
+	font-weight: bold;
 }
 
 .box2link {

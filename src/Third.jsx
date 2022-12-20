@@ -1,11 +1,12 @@
 import { Planet, SpotifyLogo, CloudRain } from 'phosphor-react';
 import styles from './third.module.css';
 import GitHubCalendar from 'react-github-calendar';
-// import resSpotify from './resources/spotify_api';
+import resSpotify from './resources/spotify_api';
 import NASA_API_KEY from './nasaAPIkey';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
+import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 
 export function Third() {
@@ -46,11 +47,11 @@ export function Third() {
 		nasaAsteroidHazardous = 'Unknown';
 	}
 
-	// const spotifyTrack = resSpotify.data.items[0].track.name;
-	// const spotifyTrackURL =
-	// 	resSpotify.data.items[0].track.external_urls.spotify;
-	// const spotifyTrackIMG = resSpotify.data.items[0].track.album.images[1].url;
-	// const spotifyTrackArtist = resSpotify.data.items[0].track.artists[0].name;
+	const spotifyTrack = resSpotify.data.items[0].track.name;
+	const spotifyTrackURL =
+		resSpotify.data.items[0].track.external_urls.spotify;
+	const spotifyTrackIMG = resSpotify.data.items[0].track.album.images[1].url;
+	const spotifyTrackArtist = resSpotify.data.items[0].track.artists[0].name;
 
 	const sinceStart = (contributions) => {
 		const currentYear = new Date().getFullYear();
@@ -68,7 +69,6 @@ export function Third() {
 			);
 		});
 	};
-console.log(loading)
 	return (
 		<>
 			<div id={loading ? styles.blank : styles.overlay}>
@@ -95,10 +95,25 @@ console.log(loading)
 									<span></span>
 								</a>
 							</div>
-							<SpotifyLogo
-								size={40}
-								color="#1CD760"
-							/>
+							<a href={spotifyTrackURL} target="blank"> 
+							<span>my last played song!</span>
+							<div className={styles.divSpotify}>
+								<SpotifyLogo
+									size={50}
+									color="#1CD760"
+								/>
+								<img
+									src={spotifyTrackIMG}
+									alt={spotifyTrack}
+								/>
+								<div className={styles.divSpotifyText}>
+									<p className={styles.divSpotifyTitle}>
+										{spotifyTrack}
+									</p>
+									<p>{spotifyTrackArtist}</p>
+								</div>
+							</div>
+							</a>
 							<CloudRain
 								size={40}
 								color="#F0F2EE"
