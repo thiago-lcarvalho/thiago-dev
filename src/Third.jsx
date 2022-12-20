@@ -1,10 +1,12 @@
 import { Planet, SpotifyLogo, CloudRain } from 'phosphor-react';
 import styles from './third.module.css';
 import GitHubCalendar from 'react-github-calendar';
-import resSpotify from './resources/spotify_api';
+// import resSpotify from './resources/spotify_api';
 import NASA_API_KEY from './nasaAPIkey';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
 export function Third() {
 	const [resNasa, setResNasa] = useState([]);
@@ -44,11 +46,11 @@ export function Third() {
 		nasaAsteroidHazardous = 'Unknown';
 	}
 
-	const spotifyTrack = resSpotify.data.items[0].track.name;
-	const spotifyTrackURL =
-		resSpotify.data.items[0].track.external_urls.spotify;
-	const spotifyTrackIMG = resSpotify.data.items[0].track.album.images[1].url;
-	const spotifyTrackArtist = resSpotify.data.items[0].track.artists[0].name;
+	// const spotifyTrack = resSpotify.data.items[0].track.name;
+	// const spotifyTrackURL =
+	// 	resSpotify.data.items[0].track.external_urls.spotify;
+	// const spotifyTrackIMG = resSpotify.data.items[0].track.album.images[1].url;
+	// const spotifyTrackArtist = resSpotify.data.items[0].track.artists[0].name;
 
 	const sinceStart = (contributions) => {
 		const currentYear = new Date().getFullYear();
@@ -66,64 +68,70 @@ export function Third() {
 			);
 		});
 	};
-
+console.log(loading)
 	return (
-		<section>
-			<a name="3"></a>
+		<>
+			<div id={loading ? styles.blank : styles.overlay}>
+				<Box sx={{ display: 'flex' }}>
+					<CircularProgress />
+				</Box>
+			</div>
+			<section>
+				<a name="3"></a>
 
-			<div className={styles.contentMainWrapper}>
-				<div className={styles.boxDivs}>
-					<div className={styles.box1Div}>
-						<div className={styles.nasaAPI}>
-							<a
-								href={nasaAsteroidIDURL}
-								target="blank"
-							>
-								<span>NASA API</span>
-								<Planet
-									size={40}
-									color="#093A8A"
-								/>
-								<span></span>
-							</a>
-						</div>
-						<SpotifyLogo
-							size={40}
-							color="#1CD760"
-						/>
-						<CloudRain
-							size={40}
-							color="#F0F2EE"
-							weight="fill"
-						/>
-					</div>
-					<a
-						className={styles.box2link}
-						href="https://github.com/thiago-lcarvalho"
-						target="blank"
-					>
-						<div className={styles.box2Div}>
-							<div className={styles.gitHubCalendar}>
-								<GitHubCalendar
-									color={'#4DF088'}
-									username="thiago-lcarvalho"
-									transformData={sinceStart}
-									hideColorLegend
-									hideMonthLabels
-									blockSize={14}
-									labels={{
-										totalCount: '{{count}}',
-									}}
-								/>
-								<span className={styles.gitHubCalendarText}>
-									github contributions <br />
-									in the last 2 months
-								</span>
+				<div className={styles.contentMainWrapper}>
+					<div className={styles.boxDivs}>
+						<div className={styles.box1Div}>
+							<div className={styles.nasaAPI}>
+								<a
+									href={nasaAsteroidIDURL}
+									target="blank"
+								>
+									<span>NASA API</span>
+									<Planet
+										size={40}
+										color="#093A8A"
+									/>
+									<span></span>
+								</a>
 							</div>
+							<SpotifyLogo
+								size={40}
+								color="#1CD760"
+							/>
+							<CloudRain
+								size={40}
+								color="#F0F2EE"
+								weight="fill"
+							/>
 						</div>
-					</a>
-					<div className={styles.box3Div}>
 						<a
+							className={styles.box2link}
+							href="https://github.com/thiago-lcarvalho"
+							target="blank"
+						>
+							<div className={styles.box2Div}>
+								<div className={styles.gitHubCalendar}>
+									<GitHubCalendar
+										color={'#4DF088'}
+										username="thiago-lcarvalho"
+										transformData={sinceStart}
+										hideColorLegend
+										hideMonthLabels
+										blockSize={14}
+										labels={{
+											totalCount: '{{count}}',
+										}}
+									/>
+									<span className={styles.gitHubCalendarText}>
+										github contributions <br />
+										in the last 2 months
+									</span>
+								</div>
+							</div>
+						</a>
+						<div className={styles.box3Div}>
+							{/* <a
 							href={spotifyTrackURL}
 							target="blank"
 						>
@@ -135,10 +143,11 @@ export function Third() {
 								{spotifyTrack} <br /> by <br />{' '}
 								{spotifyTrackArtist}
 							</span>
-						</a>
+						</a> */}
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</>
 	);
 }

@@ -8,7 +8,7 @@ import Avatar from '@mui/material/Avatar';
 export function Header() {
 	return (
 		<>
-			<header className={styles.header}>
+		<header className={styles.header}>
 				<div className={styles.nameAndRole}>
 					<a href="#">
 						<Atom
