@@ -1,5 +1,5 @@
 import axios from 'axios';
-import API_KEY from '../spotifyAPIkey';
+import API_KEY from './spotifyAPIkey';
 const resSpotify = await axios.get(
 	'https://api.spotify.com/v1/me/player/recently-played',
 	{

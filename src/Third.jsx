@@ -2,7 +2,7 @@ import { Planet, SpotifyLogo, CloudRain } from 'phosphor-react';
 import styles from './third.module.css';
 import GitHubCalendar from 'react-github-calendar';
 import resSpotify from './resources/spotify_api';
-import NASA_API_KEY from './nasaAPIkey';
+import NASA_API_KEY from './resources/nasaAPIkey';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
