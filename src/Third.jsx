@@ -95,24 +95,28 @@ export function Third() {
 									<span></span>
 								</a>
 							</div>
-							<a href={spotifyTrackURL} target="blank"> 
+
 							<span>my last played song!</span>
-							<div className={styles.divSpotify}>
-								<SpotifyLogo
-									size={50}
-									color="#1CD760"
-								/>
-								<img
-									src={spotifyTrackIMG}
-									alt={spotifyTrack}
-								/>
-								<div className={styles.divSpotifyText}>
-									<p className={styles.divSpotifyTitle}>
-										{spotifyTrack}
-									</p>
-									<p>{spotifyTrackArtist}</p>
+							<a
+								href={spotifyTrackURL}
+								target="blank"
+							>
+								<div className={styles.divSpotify}>
+									<SpotifyLogo
+										size={50}
+										color="#1CD760"
+									/>
+									<img
+										src={spotifyTrackIMG}
+										alt={spotifyTrack}
+									/>
+									<div className={styles.divSpotifyText}>
+										<p className={styles.divSpotifyTitle}>
+											{spotifyTrack}
+										</p>
+										<p>{spotifyTrackArtist}</p>
+									</div>
 								</div>
-							</div>
 							</a>
 							<CloudRain
 								size={40}
