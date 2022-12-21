@@ -19,6 +19,9 @@ export function First() {
                     <h1 className={styles.frontTitle}>
                         Frontend Developer
                     </h1>
+                    <h1 className={styles.frontTitleOffline}>
+                        Offline Build
+                    </h1>
                 </div>
             </div>
         </section>

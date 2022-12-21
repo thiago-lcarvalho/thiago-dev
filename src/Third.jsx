@@ -1,8 +1,9 @@
 import { Planet, SpotifyLogo, CloudRain, Ladder } from 'phosphor-react';
 import styles from './third.module.css';
+import resNasa from './resources/resNasa.js';
+import resSpotify from './resources/resSpotify.js';
 
 export function Third() {
-
 	function randomAsteroid(arr) {
 		const randomIndex = Math.floor(Math.random() * arr.length);
 		const item = arr[randomIndex];
@@ -10,12 +11,13 @@ export function Third() {
 		return item;
 	}
 
-	const nasaAsteroidInfo = '';
-	const nasaRandomAsteroid = '';
-	const nasaAsteroidName = "Teste";
-	const nasaAsteroidID = 123;
-	const nasaAsteroidIDURL = '';
-	var nasaAsteroidHazardous = "teste";
+	const nasaAsteroidInfo = resNasa.data.near_earth_objects;
+	const nasaRandomAsteroid = randomAsteroid(nasaAsteroidInfo);
+	const nasaAsteroidName = nasaRandomAsteroid.name_limited;
+	const nasaAsteroidID = nasaRandomAsteroid.id;
+	const nasaAsteroidIDURL = `https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=${nasaAsteroidID}&view=VOPDCA`;
+	var nasaAsteroidHazardous =
+		nasaRandomAsteroid.is_potentially_hazardous_asteroid;
 
 	if (nasaAsteroidHazardous == true) {
 		nasaAsteroidHazardous = 'Yes';
@@ -25,27 +27,28 @@ export function Third() {
 		nasaAsteroidHazardous = 'Unknown';
 	}
 
-	const spotifyTrack = "Teste";
-	const spotifyTrackURL = '';
-	const spotifyTrackIMG = './important-photo.jpeg';
-	const spotifyTrackArtist = "Teste";
+	const spotifyTrack = resSpotify.data.items[0].track.name;
+	const spotifyTrackURL =
+		resSpotify.data.items[0].track.external_urls.spotify;
+	const spotifyTrackIMG = resSpotify.data.items[0].track.album.images[1].url;
+	const spotifyTrackArtist = resSpotify.data.items[0].track.artists[0].name;
 
-	// const sinceStart = (contributions) => {
-	// 	const currentYear = new Date().getFullYear();
-	// 	const currentMonth = new Date().getMonth();
-	// 	const shownMonths = 2;
+	const sinceStart = (contributions) => {
+		const currentYear = new Date().getFullYear();
+		const currentMonth = new Date().getMonth();
+		const shownMonths = 2;
 
-	// 	return contributions.filter((day) => {
-	// 		const date = new Date(day.date);
-	// 		const monthOfDay = date.getMonth();
+		return contributions.filter((day) => {
+			const date = new Date(day.date);
+			const monthOfDay = date.getMonth();
 
-	// 		return (
-	// 			date.getFullYear() === currentYear &&
-	// 			monthOfDay > currentMonth - shownMonths &&
-	// 			monthOfDay <= currentMonth
-	// 		);
-	// 	});
-	// };
+			return (
+				date.getFullYear() === currentYear &&
+				monthOfDay > currentMonth - shownMonths &&
+				monthOfDay <= currentMonth
+			);
+		});
+	};
 	return (
 		<>
 			{/* <div id={loading ? styles.blank : styles.overlay}>

@@ -5,7 +5,6 @@ import { Third } from './Third'
 
 
 export function App() {
-  alert("Offline build")
   return (
       <>
       <Header />
