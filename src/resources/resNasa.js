@@ -1,9 +1,11 @@
+import NASA_API_KEY from "../nasaAPIkey";
+
 const resNasa =
   {
     "data": {
       "links": {
-        "next": "http://api.nasa.gov/neo/rest/v1/neo/browse?page=1&size=20&api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt",
-        "self": "http://api.nasa.gov/neo/rest/v1/neo/browse?page=0&size=20&api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+        "next": `http://api.nasa.gov/neo/rest/v1/neo/browse?page=1&size=20&api_key=${NASA_API_KEY}`,
+        "self": `http://api.nasa.gov/neo/rest/v1/neo/browse?page=0&size=20&api_key=${NASA_API_KEY}`
       },
       "page": {
         "size": 20,
@@ -14,7 +16,7 @@ const resNasa =
       "near_earth_objects": [
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2000433?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2000433?api_key=${NASA_API_KEY}`
           },
           "id": "2000433",
           "neo_reference_id": "2000433",
@@ -655,7 +657,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2000719?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2000719?api_key=${NASA_API_KEY}`
           },
           "id": "2000719",
           "neo_reference_id": "2000719",
@@ -1007,7 +1009,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2000887?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2000887?api_key=${NASA_API_KEY}`
           },
           "id": "2000887",
           "neo_reference_id": "2000887",
@@ -1308,7 +1310,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001036?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001036?api_key=${NASA_API_KEY}`
           },
           "id": "2001036",
           "neo_reference_id": "2001036",
@@ -1609,7 +1611,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001221?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001221?api_key=${NASA_API_KEY}`,
           },
           "id": "2001221",
           "neo_reference_id": "2001221",
@@ -2165,7 +2167,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001566?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001566?api_key=${NASA_API_KEY}`
           },
           "id": "2001566",
           "neo_reference_id": "2001566",
@@ -4183,7 +4185,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001580?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001580?api_key=${NASA_API_KEY}`
           },
           "id": "2001580",
           "neo_reference_id": "2001580",
@@ -4671,7 +4673,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001620?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001620?api_key=${NASA_API_KEY}`
           },
           "id": "2001620",
           "neo_reference_id": "2001620",
@@ -6026,7 +6028,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001627?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001627?api_key=${NASA_API_KEY}`
           },
           "id": "2001627",
           "neo_reference_id": "2001627",
@@ -6446,7 +6448,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001685?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001685?api_key=${NASA_API_KEY}`
           },
           "id": "2001685",
           "neo_reference_id": "2001685",
@@ -7835,7 +7837,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001862?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001862?api_key=${NASA_API_KEY}`
           },
           "id": "2001862",
           "neo_reference_id": "2001862",
@@ -9326,7 +9328,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001863?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001863?api_key=${NASA_API_KEY}`
           },
           "id": "2001863",
           "neo_reference_id": "2001863",
@@ -9763,7 +9765,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001864?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001864?api_key=${NASA_API_KEY}`
           },
           "id": "2001864",
           "neo_reference_id": "2001864",
@@ -11203,7 +11205,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001865?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001865?api_key=${NASA_API_KEY}`
           },
           "id": "2001865",
           "neo_reference_id": "2001865",
@@ -13816,7 +13818,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001866?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001866?api_key=${NASA_API_KEY}`
           },
           "id": "2001866",
           "neo_reference_id": "2001866",
@@ -14338,7 +14340,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001915?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001915?api_key=${NASA_API_KEY}`
           },
           "id": "2001915",
           "neo_reference_id": "2001915",
@@ -14894,7 +14896,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001916?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001916?api_key=${NASA_API_KEY}`
           },
           "id": "2001916",
           "neo_reference_id": "2001916",
@@ -15161,7 +15163,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001917?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001917?api_key=${NASA_API_KEY}`
           },
           "id": "2001917",
           "neo_reference_id": "2001917",
@@ -15479,7 +15481,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001943?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001943?api_key=${NASA_API_KEY}`
           },
           "id": "2001943",
           "neo_reference_id": "2001943",
@@ -16171,7 +16173,7 @@ const resNasa =
         },
         {
           "links": {
-            "self": "http://api.nasa.gov/neo/rest/v1/neo/2001980?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+            "self": `http://api.nasa.gov/neo/rest/v1/neo/2001980?api_key=${NASA_API_KEY}`
           },
           "id": "2001980",
           "neo_reference_id": "2001980",
@@ -16674,7 +16676,7 @@ const resNasa =
         "Content-Type": null
       },
       "method": "get",
-      "url": "https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=ry7Be9L6vzv7dwR76vKm4JdE8SRmPaxpkCxgQCNt"
+      "url": `https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=${NASA_API_KEY}`
     },
     "request": {}
   }

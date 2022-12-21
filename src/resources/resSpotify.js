@@ -1,3 +1,5 @@
+import API_KEY from "../spotifyAPIkey"; 
+
 const resSpotify = {
     "data": {
       "items": [
@@ -500,7 +502,7 @@ const resSpotify = {
       "headers": {
         "Accept": "application/json",
         "Content-Type": null,
-        "Authorization": "Bearer BQBInJshImDCHR3Icpl-fvsKJbDWCfNcMQBoxtoyv5ZyUJtBcFKTKAeuPVF7UPO8TAq3Fn8ENM7_suwZo1Glk5Rk4aV7znzI4q-YeOdFHPAovTCczcISNBafK1sg_Z_uCi8BvzKuMibnOXYzssy1I-xrcvstoFcu7klW9yEvm-NzMVIEb5qGkw"
+        "Authorization": API_KEY
       },
       "params": {
         "limit": "1"
