@@ -71,7 +71,7 @@ export function Third() {
 	};
 	return (
 		<>
-			<div id={loaderScreen ? styles.blank : styles.overlay}>
+			<div id={loaderScreen ? styles.overlay : styles.blank}>
 				<Box sx={{ display: 'flex' }}>
 					<svg
 						className={styles.svgAnimate}
