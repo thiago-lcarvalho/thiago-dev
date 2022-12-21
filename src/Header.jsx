@@ -1,4 +1,4 @@
-import { Atom, Smiley } from 'phosphor-react';
+import { Atom } from 'phosphor-react';
 import styles from './header.module.css';
 import { RiGithubFill, RiLinkedinFill, RiInstagramFill } from 'react-icons/Ri';
 import { BsFillSquareFill } from 'react-icons/Bs';
@@ -15,7 +15,6 @@ export function Header() {
 							className={styles.atom}
 							size={40}
 						/>
-						{/* <Smiley size={45} className={styles.introPhoto} color="#ffffff" weight="fill" /> */}
                         <Avatar className={styles.introPhoto} sx={{ width: 40, height: 40 }} alt="Thiago Afonso" src="././important-photo-2.png"/> 
 					</a>
 					<span>thank you for visiting ❤️</span>

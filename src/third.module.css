@@ -1,24 +1,102 @@
 #overlay {
 	position: fixed;
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
+	background-image: linear-gradient(
+		to left bottom,
+		#ffffff,
+		#eaf0fb,
+		#cbe4f6,
+		#a5d9ea,
+		#80cfd3
+	);
 	z-index: 99999;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	transition: 1s 0.4s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.svgAnimate {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 30px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	margin: 20px;
+	width: 100px;
+	height: 100px;
+	-webkit-animation-name: spin;
+	-webkit-animation-duration: 2000ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-name: spin;
+	-moz-animation-duration: 2000ms;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	-ms-animation-name: spin;
+	-ms-animation-duration: 2000ms;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-timing-function: linear;
+	animation-name: spin;
+	animation-duration: 2000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+	from {
+		-ms-transform: rotate(0deg);
+	}
+	to {
+		-ms-transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes spin {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 #blank {
+	opacity: 0%;
 	position: fixed;
-	height: 0vh;
-	width: 0vw;
 	z-index: 99999;
+	height: 0%;
+	width: 0%;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .contentMainWrapper {
@@ -89,13 +167,13 @@
 .divSpotify img {
 	width: 50px;
 	height: 50px;
-	margin: 0 .5em;
+	margin: 0 0.5em;
 }
 
 .divSpotifyText {
 	font-family: var(--font-sans);
 	font-weight: normal;
-	margin: 0 .5em 0 0;
+	margin: 0 0.5em 0 0;
 	display: flex;
 	text-align: start;
 	flex-direction: column;
