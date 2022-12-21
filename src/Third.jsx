@@ -1,25 +1,7 @@
-import { Planet, SpotifyLogo, CloudRain } from 'phosphor-react';
+import { Planet, SpotifyLogo, CloudRain, Ladder } from 'phosphor-react';
 import styles from './third.module.css';
-import GitHubCalendar from 'react-github-calendar';
-import resSpotify from './resources/spotify_api';
-import NASA_API_KEY from './nasaAPIkey';
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-import CircularProgress from '@mui/material/CircularProgress';
-import { useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
 
 export function Third() {
-	const [resNasa, setResNasa] = useState([]);
-	const [loading, setLoading] = useState(false);
-	const NASA_API_URL =
-		`https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=` + NASA_API_KEY;
-	useEffect(() => {
-		axios.get(NASA_API_URL).then((res) => {
-			setResNasa(res);
-			setLoading(true);
-		});
-	}, []);
 
 	function randomAsteroid(arr) {
 		const randomIndex = Math.floor(Math.random() * arr.length);
@@ -28,16 +10,12 @@ export function Third() {
 		return item;
 	}
 
-	const nasaAsteroidInfo = loading ? resNasa.data.near_earth_objects : '';
-	const nasaRandomAsteroid = loading ? randomAsteroid(nasaAsteroidInfo) : '';
-	const nasaAsteroidName = loading ? nasaRandomAsteroid.name_limited : '';
-	const nasaAsteroidID = loading ? nasaRandomAsteroid.id : '';
-	const nasaAsteroidIDURL = loading
-		? `https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=${nasaAsteroidID}&view=VOPDCA`
-		: '';
-	var nasaAsteroidHazardous = loading
-		? nasaRandomAsteroid.is_potentially_hazardous_asteroid
-		: '';
+	const nasaAsteroidInfo = '';
+	const nasaRandomAsteroid = '';
+	const nasaAsteroidName = "Teste";
+	const nasaAsteroidID = 123;
+	const nasaAsteroidIDURL = '';
+	var nasaAsteroidHazardous = "teste";
 
 	if (nasaAsteroidHazardous == true) {
 		nasaAsteroidHazardous = 'Yes';
@@ -47,35 +25,34 @@ export function Third() {
 		nasaAsteroidHazardous = 'Unknown';
 	}
 
-	const spotifyTrack = resSpotify.data.items[0].track.name;
-	const spotifyTrackURL =
-		resSpotify.data.items[0].track.external_urls.spotify;
-	const spotifyTrackIMG = resSpotify.data.items[0].track.album.images[1].url;
-	const spotifyTrackArtist = resSpotify.data.items[0].track.artists[0].name;
+	const spotifyTrack = "Teste";
+	const spotifyTrackURL = '';
+	const spotifyTrackIMG = './important-photo.jpeg';
+	const spotifyTrackArtist = "Teste";
 
-	const sinceStart = (contributions) => {
-		const currentYear = new Date().getFullYear();
-		const currentMonth = new Date().getMonth();
-		const shownMonths = 2;
+	// const sinceStart = (contributions) => {
+	// 	const currentYear = new Date().getFullYear();
+	// 	const currentMonth = new Date().getMonth();
+	// 	const shownMonths = 2;
 
-		return contributions.filter((day) => {
-			const date = new Date(day.date);
-			const monthOfDay = date.getMonth();
+	// 	return contributions.filter((day) => {
+	// 		const date = new Date(day.date);
+	// 		const monthOfDay = date.getMonth();
 
-			return (
-				date.getFullYear() === currentYear &&
-				monthOfDay > currentMonth - shownMonths &&
-				monthOfDay <= currentMonth
-			);
-		});
-	};
+	// 		return (
+	// 			date.getFullYear() === currentYear &&
+	// 			monthOfDay > currentMonth - shownMonths &&
+	// 			monthOfDay <= currentMonth
+	// 		);
+	// 	});
+	// };
 	return (
 		<>
-			<div id={loading ? styles.blank : styles.overlay}>
+			{/* <div id={loading ? styles.blank : styles.overlay}>
 				<Box sx={{ display: 'flex' }}>
 					<CircularProgress />
 				</Box>
-			</div>
+			</div> */}
 			<section>
 				<a name="3"></a>
 
@@ -95,24 +72,27 @@ export function Third() {
 									<span></span>
 								</a>
 							</div>
-							<a href={spotifyTrackURL} target="blank"> 
-							<span>my last played song!</span>
-							<div className={styles.divSpotify}>
-								<SpotifyLogo
-									size={50}
-									color="#1CD760"
-								/>
-								<img
-									src={spotifyTrackIMG}
-									alt={spotifyTrack}
-								/>
-								<div className={styles.divSpotifyText}>
-									<p className={styles.divSpotifyTitle}>
-										{spotifyTrack}
-									</p>
-									<p>{spotifyTrackArtist}</p>
+							<a
+								href={spotifyTrackURL}
+								target="blank"
+							>
+								<span>my last played song!</span>
+								<div className={styles.divSpotify}>
+									<SpotifyLogo
+										size={50}
+										color="#1CD760"
+									/>
+									<img
+										src={spotifyTrackIMG}
+										alt={spotifyTrack}
+									/>
+									<div className={styles.divSpotifyText}>
+										<p className={styles.divSpotifyTitle}>
+											{spotifyTrack}
+										</p>
+										<p>{spotifyTrackArtist}</p>
+									</div>
 								</div>
-							</div>
 							</a>
 							<CloudRain
 								size={40}
@@ -127,7 +107,7 @@ export function Third() {
 						>
 							<div className={styles.box2Div}>
 								<div className={styles.gitHubCalendar}>
-									<GitHubCalendar
+									{/* <GitHubCalendar
 										color={'#4DF088'}
 										username="thiago-lcarvalho"
 										transformData={sinceStart}
@@ -137,7 +117,7 @@ export function Third() {
 										labels={{
 											totalCount: '{{count}}',
 										}}
-									/>
+									/> */}
 									<span className={styles.gitHubCalendarText}>
 										github contributions <br />
 										in the last 2 months
