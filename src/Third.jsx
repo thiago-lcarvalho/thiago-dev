@@ -1,7 +1,7 @@
 import { Planet, SpotifyLogo, CloudRain } from 'phosphor-react';
 import styles from './third.module.css';
 import GitHubCalendar from 'react-github-calendar';
-import resSpotify from './resources/spotify_api';
+import { resSpotify } from './resources/spotify_api';
 import NASA_API_KEY from './resources/nasaAPIkey';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
@@ -9,7 +9,7 @@ import Box from '@mui/material/Box';
 
 export function Third() {
 	const [loaderScreen, setloaderScreen] = useState([]);
-		setTimeout(setloaderScreen, 3000);
+	setTimeout(setloaderScreen, 3000);
 
 	const [resNasa, setResNasa] = useState([]);
 	const [loadingAPI, setLoading] = useState(true);
@@ -29,7 +29,9 @@ export function Third() {
 	}
 
 	const nasaAsteroidInfo = loadingAPI ? '' : resNasa.data.near_earth_objects;
-	const nasaRandomAsteroid = loadingAPI ? '' : randomAsteroid(nasaAsteroidInfo);
+	const nasaRandomAsteroid = loadingAPI
+		? ''
+		: randomAsteroid(nasaAsteroidInfo);
 	const nasaAsteroidName = loadingAPI ? '' : nasaRandomAsteroid.name_limited;
 	const nasaAsteroidID = loadingAPI ? '' : nasaRandomAsteroid.id;
 	const nasaAsteroidIDURL = loadingAPI
@@ -161,8 +163,7 @@ export function Third() {
 								</div>
 							</div>
 						</a>
-						<div className={styles.box3Div}>
-						</div>
+						<div className={styles.box3Div}></div>
 					</div>
 				</div>
 			</section>
