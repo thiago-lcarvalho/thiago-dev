@@ -26,4 +26,4 @@ I'LL FINISH THIS WEBSITE THIS TIME!!!!!
 
 20/12 11:47 - i forgot to update the README.md file, lot of updates like loading api before showing screen, new spotify card, etc...
 
-22/12 19:51 - feels good never having to grab spotify api token again
+22/12 19:51 - feels good never having to grab spotify api token again, im learning so much doing this project

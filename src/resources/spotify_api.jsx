@@ -34,4 +34,4 @@ const resSpotify = await axios
 		console.log(err.message);
 	});
 
-export { resSpotify, NEW_ACCESS_TOKEN };
+export { resSpotify };
