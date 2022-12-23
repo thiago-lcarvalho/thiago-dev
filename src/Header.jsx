@@ -4,18 +4,28 @@ import { RiGithubFill, RiLinkedinFill, RiInstagramFill } from 'react-icons/Ri';
 import { BsFillSquareFill } from 'react-icons/Bs';
 import { MdOutlineEmail } from 'react-icons/Md';
 import Avatar from '@mui/material/Avatar';
+import { resSpotify } from './resources/spotify_api';
 
 export function Header() {
+	const spotifyTrack = resSpotify.data.items[0].track.name;
+	const spotifyTrackIMG = resSpotify.data.items[0].track.album.images[1].url;
+	const spotifyTrackArtist = resSpotify.data.items[0].track.artists[0].name;
+
 	return (
 		<>
-		<header className={styles.header}>
+			<header className={styles.header}>
 				<div className={styles.nameAndRole}>
 					<a href="#">
 						<Atom
 							className={styles.atom}
 							size={40}
 						/>
-                        <Avatar className={styles.introPhoto} sx={{ width: 40, height: 40 }} alt="Thiago Afonso" src="././important-photo-2.png"/> 
+						<Avatar
+							className={styles.introPhoto}
+							sx={{ width: 40, height: 40 }}
+							alt="Thiago Afonso"
+							src="././important-photo-2.png"
+						/>
 					</a>
 					<span>thank you for visiting ❤️</span>
 				</div>
@@ -105,6 +115,22 @@ export function Header() {
 					</a>
 				</li>
 			</ul>
+			<a className={styles.spotifyLink}>
+				<div className={styles.divSpotify}>
+					<SpotifyLogo
+						size={50}
+						color="#1CD760"
+					/>
+					<img
+						src={spotifyTrackIMG}
+						alt={spotifyTrack}
+					/>
+					<div className={styles.divSpotifyText}>
+						<p className={styles.divSpotifyTitle}>{spotifyTrack}</p>
+						<p>{spotifyTrackArtist}</p>
+					</div>
+				</div>
+			</a>
 		</>
 	);
 }

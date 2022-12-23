@@ -150,3 +150,50 @@ a:hover {
         gap: 0%;
     }
 }
+
+.spotifyLink {
+    position: fixed;
+    width: 300px;
+    height: 150px;
+}
+
+.divSpotify {
+    bottom: 2.5rem;
+    right: 4rem;
+    left: auto;
+    padding-bottom: 2em;
+    position: fixed;
+    z-index: 9999;
+	background-color: #d8f5e3;
+	border: 2px solid #1cd760;
+	border-radius: 8px;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+	height: 80px;
+	width: 300px;
+	margin: 1em 0;
+    padding: 1em 0;
+}
+
+.divSpotify img {
+	width: 50px;
+	height: 50px;
+	margin: 0 0.5em;
+}
+
+.divSpotifyText {
+	font-family: var(--font-sans);
+	font-weight: normal;
+    width:150px;
+	margin: 0 0.5em 0 0;
+	display: flex;
+	text-align: start;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.divSpotifyTitle {
+	font-weight: bold;
+}
