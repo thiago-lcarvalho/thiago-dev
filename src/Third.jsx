@@ -28,16 +28,16 @@ export function Third() {
 		return item;
 	}
 
-	var nasaAsteroidInfo = loadingAPI ? '' : resNasa.data.near_earth_objects;
-	var nasaRandomAsteroid = loadingAPI
+	let nasaAsteroidInfo = loadingAPI ? '' : resNasa.data.near_earth_objects;
+	let nasaRandomAsteroid = loadingAPI
 		? ''
 		: randomAsteroid(nasaAsteroidInfo);
-	var nasaAsteroidName = loadingAPI ? '' : nasaRandomAsteroid.name_limited;
-	var nasaAsteroidID = loadingAPI ? '' : nasaRandomAsteroid.id;
-	var nasaAsteroidIDURL = loadingAPI
+	let nasaAsteroidName = loadingAPI ? '' : nasaRandomAsteroid.name_limited;
+	let nasaAsteroidID = loadingAPI ? '' : nasaRandomAsteroid.id;
+	let nasaAsteroidIDURL = loadingAPI
 		? ''
 		: `https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=${nasaAsteroidID}&view=VOPDCA`;
-	var nasaAsteroidHazardous = loadingAPI
+	let nasaAsteroidHazardous = loadingAPI
 		? ''
 		: nasaRandomAsteroid.is_potentially_hazardous_asteroid;
 
