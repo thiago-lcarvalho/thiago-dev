@@ -1,8 +1,8 @@
-import { Planet, SpotifyLogo, CloudRain } from 'phosphor-react';
+import { SpotifyLogo, CloudRain, InstagramLogo } from 'phosphor-react';
 import styles from './third.module.css';
 import GitHubCalendar from 'react-github-calendar';
 import { resSpotify } from './resources/spotify_api';
-import NASA_API_KEY from './resources/nasaAPIkey';
+import { NASA_API_KEY } from './resources/API_KEYS';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
@@ -28,10 +28,8 @@ export function Third() {
 		return item;
 	}
 
-	let nasaAsteroidInfo = loadingAPI ? '' : resNasa.data.near_earth_objects;
-	let nasaRandomAsteroid = loadingAPI
-		? ''
-		: randomAsteroid(nasaAsteroidInfo);
+	let nasaAsteroid = loadingAPI ? '' : resNasa.data.near_earth_objects;
+	let nasaRandomAsteroid = loadingAPI ? '' : randomAsteroid(nasaAsteroid);
 	let nasaAsteroidName = loadingAPI ? '' : nasaRandomAsteroid.name_limited;
 	let nasaAsteroidID = loadingAPI ? '' : nasaRandomAsteroid.id;
 	let nasaAsteroidIDURL = loadingAPI
@@ -96,19 +94,19 @@ export function Third() {
 				<div className={styles.contentMainWrapper}>
 					<div className={styles.boxDivs}>
 						<div className={styles.box1Div}>
-							<div className={styles.nasaAPI}>
-								<a
-									href={nasaAsteroidIDURL}
-									target="blank"
-								>
-									<span>NASA API</span>
-									<Planet
+							<span>NASA API</span>
+							<a
+								href={nasaAsteroidIDURL}
+								target="blank"
+							>
+								<div className={styles.divNasa}>
+									<InstagramLogo
 										size={40}
-										color="#093A8A"
+										color="#E64D4B"
 									/>
 									<span></span>
-								</a>
-							</div>
+								</div>
+							</a>
 
 							<span>my last played song!</span>
 							<a

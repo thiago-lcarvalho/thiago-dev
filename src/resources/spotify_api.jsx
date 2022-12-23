@@ -1,6 +1,6 @@
 import axios from 'axios';
 import qs from 'qs';
-import { BASE64, REFRESH_TOKEN } from './spotifyAPIkey';
+import { BASE64, REFRESH_TOKEN } from './API_KEYS';
 
 const headers = {
 	headers: {

@@ -1,4 +1,4 @@
-import { Atom } from 'phosphor-react';
+import { Atom, SpotifyLogo } from 'phosphor-react';
 import styles from './header.module.css';
 import { RiGithubFill, RiLinkedinFill, RiInstagramFill } from 'react-icons/Ri';
 import { BsFillSquareFill } from 'react-icons/Bs';

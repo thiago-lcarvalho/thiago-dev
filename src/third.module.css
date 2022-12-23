@@ -128,12 +128,19 @@
 	justify-content: center;
 	align-items: center;
 	width: 20rem;
-	height: 25rem;
+	height: 30rem;
 }
 
-.nasaAPI {
-	border: 2px solid #0c58d3;
-	border-radius: 20px;
+.divNasa {
+	background-color: #f8e8f6;
+	border: 2px solid #fb6fa2;
+	border-radius: 8px;
+	display: flex;
+	height: 90px;
+	width: 300px;
+	margin: 1em 0;
+	display: flex;
+	align-items: center;
 }
 
 .box1Div span {
@@ -160,6 +167,8 @@
 	border: 2px solid #1cd760;
 	border-radius: 8px;
 	display: flex;
+	height: 90px;
+	width: 300px;
 	padding: 1em 0;
 	margin: 1em 0;
 }
@@ -199,7 +208,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 20rem;
-	height: 25rem;
+	height: 30rem;
 }
 
 .box3Div {
@@ -212,7 +221,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 20rem;
-	height: 25rem;
+	height: 30rem;
 }
 
 .box3Div span {
