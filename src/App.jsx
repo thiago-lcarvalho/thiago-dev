@@ -11,7 +11,7 @@ export function App() {
       <Header /> {/* remove spotify, keep on third */}
       <First />
       <Second /> {/* change icon organization */}
-      <Third /> {/* only spotify api + explanation  */}
+      <Third /> {/* only spotify api + explanation  + self-info on third card */}
       {/* add fourth section with contact info */}
       </>
   )
