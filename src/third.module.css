@@ -214,12 +214,12 @@
 
 .box3Div {
 	margin: 1em;
+	padding: 1em 0;
 	border-radius: 20px;
 	background: linear-gradient(145deg, #f0f0f0, #ef9697);
 	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #ffe4e4;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	width: 20rem;
 	height: 30rem;
@@ -238,10 +238,19 @@
 	align-items: center;
 }
 
-.box3Div img {
-	border-radius: 2px;
-	height: 200px;
-	width: 200px;
+.box3Div a:hover {
+	opacity: 100%;
+}
+
+.apiSpotifyInfo {
+	font-weight: bold;
+	font-family: var(--font-sans);
+	padding: .5em;
+}
+
+.apiSpotifyPs p {
+	padding: .5em 1em;
+	font-family: var(--font-mono);
 }
 
 .gitHubCalendar {

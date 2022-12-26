@@ -93,49 +93,7 @@ export function Third() {
 
 				<div className={styles.contentMainWrapper}>
 					<div className={styles.boxDivs}>
-						<div className={styles.box1Div}>
-							<span>NASA API</span>
-							<a
-								href={nasaAsteroidIDURL}
-								target="blank"
-							>
-								<div className={styles.divNasa}>
-									<InstagramLogo
-										size={40}
-										color="#E64D4B"
-									/>
-									<span></span>
-								</div>
-							</a>
-
-							<span>my last played song!</span>
-							<a
-								href={spotifyTrackURL}
-								target="blank"
-							>
-								<div className={styles.divSpotify}>
-									<SpotifyLogo
-										size={50}
-										color="#1CD760"
-									/>
-									<img
-										src={spotifyTrackIMG}
-										alt={spotifyTrack}
-									/>
-									<div className={styles.divSpotifyText}>
-										<p className={styles.divSpotifyTitle}>
-											{spotifyTrack}
-										</p>
-										<p>{spotifyTrackArtist}</p>
-									</div>
-								</div>
-							</a>
-							<CloudRain
-								size={40}
-								color="#F0F2EE"
-								weight="fill"
-							/>
-						</div>
+						<div className={styles.box1Div}></div>
 						<a
 							className={styles.box2link}
 							href="https://github.com/thiago-lcarvalho"
@@ -161,7 +119,45 @@ export function Third() {
 								</div>
 							</div>
 						</a>
-						<div className={styles.box3Div}></div>
+						<div className={styles.box3Div}>
+							<span>working with APIs</span>
+							<a
+								href={spotifyTrackURL}
+								target="blank"
+							>
+								<div className={styles.divSpotify}>
+									<SpotifyLogo
+										size={50}
+										color="#1CD760"
+									/>
+									<img
+										src={spotifyTrackIMG}
+										alt={spotifyTrack}
+									/>
+									<div className={styles.divSpotifyText}>
+										<p className={styles.divSpotifyTitle}>
+											{spotifyTrack}
+										</p>
+										<p>{spotifyTrackArtist}</p>
+									</div>
+								</div>
+							</a>
+							<p className={styles.apiSpotifyInfo}>
+								Using Axios to get stats of my last heard song
+								on spotify in real time
+							</p>
+							<div className={styles.apiSpotifyPs}>
+								<p>
+									Fetching data from Spotify API utilizing the
+									Authorization Code Flow.
+								</p>
+								<p>
+									Requesting access token and automatically
+									refreshing with Refresh Token
+								</p>
+								<p>Returns requested data</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
