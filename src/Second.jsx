@@ -12,8 +12,10 @@ import {
 	GitDiff,
 	TerminalWindow,
 	Activity,
+	Command,
 } from 'phosphor-react';
 import Stack from '@mui/material/Stack';
+import { BsCircle } from 'react-icons/Bs';
 
 export function Second() {
 	var timeStartedDev = moment('2022-07-06T18:00:00Z');
@@ -33,11 +35,11 @@ export function Second() {
 						className={styles.iconsBackground2}
 						size={45}
 					/>
-					<FileHtml
+					<TerminalWindow
 						className={styles.iconsBackground3}
 						size={45}
 					/>
-					<FileCss
+					<Command
 						className={styles.iconsBackground4}
 						size={45}
 					/>
@@ -55,14 +57,6 @@ export function Second() {
 					/>
 					<GitPullRequest
 						className={styles.iconsBackground8}
-						size={45}
-					/>
-					<GitDiff
-						className={styles.iconsBackground9}
-						size={45}
-					/>
-					<TerminalWindow
-						className={styles.iconsBackground0}
 						size={45}
 					/>
 				</div>
@@ -203,8 +197,7 @@ export function Second() {
 						</svg>
 					</Stack>
 				</div>
-				<div className={styles.secondBox}>
-				</div>
+				<div className={styles.secondBox}></div>
 			</div>
 		</section>
 	);
