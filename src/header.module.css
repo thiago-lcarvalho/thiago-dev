@@ -30,7 +30,7 @@ header {
     width: 100vw;
     gap: 60%;
     justify-content: center;
-    height: 12vh;
+    height: 8vh;
     display: flex;
     align-items: center;
     backdrop-filter: blur(5px) saturate(120%);
