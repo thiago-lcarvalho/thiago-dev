@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 
 export function Third() {
+
 	const [loaderScreen, setloaderScreen] = useState([]);
 	setTimeout(setloaderScreen, 3000);
 
@@ -120,7 +121,7 @@ export function Third() {
 							</div>
 						</a>
 						<div className={styles.box3Div}>
-							<span>working with APIs</span>
+							<span>Working with APIs</span>
 							<a
 								href={spotifyTrackURL}
 								target="blank"
@@ -142,20 +143,25 @@ export function Third() {
 									</div>
 								</div>
 							</a>
-							<p className={styles.apiSpotifyInfo}>
-								Using Axios to get stats of my last heard song
-								on spotify in real time
-							</p>
-							<div className={styles.apiSpotifyPs}>
-								<p>
-									Fetching data from Spotify API utilizing the
-									Authorization Code Flow.
+							<div className={styles.spotifyInfoText}>
+								<p className={styles.apiSpotifyInfo}>
+									Displaying stats of my last heard
+									song on spotify in real time with Axios
 								</p>
-								<p>
-									Requesting access token and automatically
-									refreshing with Refresh Token
-								</p>
-								<p>Returns requested data</p>
+								<div className={styles.apiSpotifyPs}>
+									<p>
+										Fetching data from Spotify API utilizing
+										the Authorization Code Flow.
+										<br />
+										<br />
+										Requesting access token <br />and
+										self-refreshing with Refresh
+										Token
+										<br />
+										<br />
+										Returning requested data
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
