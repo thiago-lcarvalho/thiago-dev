@@ -1,6 +1,7 @@
 import { Atom, SpotifyLogo } from 'phosphor-react';
 import styles from './header.module.css';
 import { RiGithubFill, RiLinkedinFill, RiInstagramFill } from 'react-icons/Ri';
+import { HiDocumentText } from 'react-icons/Hi';
 import { BsFillSquareFill } from 'react-icons/Bs';
 import { MdOutlineEmail } from 'react-icons/Md';
 import Avatar from '@mui/material/Avatar';
@@ -29,15 +30,14 @@ export function Header() {
 					</a>
 					<span>thank you for visiting ❤️</span>
 				</div>
-				<div className={styles.finalHeader}>
-					<a href="#3">next</a>
+				{/* <div className={styles.finalHeader}>
 					<a
 						href="././cv.pdf"
 						target="blank"
 					>
 						cv
 					</a>
-				</div>
+				</div> */}
 			</header>
 			<div className={styles.leftHeader}>
 				<ul
@@ -47,11 +47,11 @@ export function Header() {
 					<a
 						href="https://www.linkedin.com/in/thiagoalcarvalho/"
 						target="blank"
-						title="LinkedIn Profile Icon"
+						title="LinkedIn Profile"
 					>
 						<RiLinkedinFill
 							size={25}
-							title="LinkedIn Profile Icon"
+							title="LinkedIn Profile"
 						/>
 					</a>
 				</ul>
@@ -62,11 +62,11 @@ export function Header() {
 					<a
 						href="https://github.com/thiago-lcarvalho"
 						target="blank"
-						title="GitHub Profile Icon"
+						title="GitHub Profile"
 					>
 						<RiGithubFill
 							size={25}
-							title="GitHub Profile Icon"
+							title="GitHub Profile"
 						/>
 					</a>
 				</ul>
@@ -81,7 +81,7 @@ export function Header() {
 					>
 						<RiInstagramFill
 							size={25}
-							title="Instagram Profile Icon"
+							title="Instagram Profile"
 						/>
 					</a>
 				</ul>
@@ -96,6 +96,16 @@ export function Header() {
 					>
 						<MdOutlineEmail size={25} />
 					</a>
+				
+				</ul>
+				<ul className={styles.linkButtons}>
+				<a
+						href="././cv.pdf"
+						target="blank"
+						title="Open CV"
+					>
+				<HiDocumentText size={25}/>
+				</a>
 				</ul>
 			</div>
 			<ul className={styles.selectorRight}>

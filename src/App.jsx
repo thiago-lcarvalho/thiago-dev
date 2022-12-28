@@ -8,10 +8,10 @@ export function App() {
   
   return (
       <>
-      <Header /> {/* remove spotify, keep on third */}
+      <Header />
       <First />
       <Second /> {/* change icon organization */}
-      <Third /> {/* only spotify api + explanation  + self-info on third card */}
+      <Third /> {/* only spotify api + explanation  + self-info on first card */}
       {/* add fourth section with contact info */}
       </>
   )

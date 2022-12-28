@@ -62,6 +62,7 @@ link {
 
 .nameAndRole {
     display: flex;
+    padding-left: 11.55em;
 }
 
 .nameAndRole span {
