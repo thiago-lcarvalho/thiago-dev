@@ -10,7 +10,7 @@ export function App() {
       <>
       <Header />
       <First />
-      <Second /> {/* change icon organization */}
+      <Second />
       <Third /> {/* only spotify api + explanation  + self-info on first card */}
       {/* add fourth section with contact info */}
       </>

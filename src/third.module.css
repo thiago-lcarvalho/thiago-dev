@@ -129,13 +129,14 @@
 	align-items: center;
 	width: 20rem;
 	height: 35rem;
+	transition: .5s;
 }
 
 .box2Div {
 	margin: 1em;
 	font-family: var(--font-sans);
 	border-radius: 20px;
-	background: linear-gradient(145deg, #f0f0f0, #adfaec);
+	background: linear-gradient(145deg, #f0f0f0, #8bffea);
 	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #dafff0;
 	display: flex;
 	flex-direction: column;
@@ -143,6 +144,7 @@
 	align-items: center;
 	width: 20rem;
 	height: 35rem;
+	transition: .5s;
 }
 
 .box3Div {
@@ -157,6 +159,19 @@
 	align-items: center;
 	width: 20rem;
 	height: 35rem;
+	transition: .5s;
+}
+
+.box1Div:hover {
+	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #b9a8ff;
+}
+
+.box2Div:hover {
+	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #8bffea;
+}
+
+.box3Div:hover {
+	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #ef9697;
 }
 
 .box1Div span {
