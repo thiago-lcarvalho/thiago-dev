@@ -30,14 +30,14 @@ export function Header() {
 					</a>
 					<span>thank you for visiting ❤️</span>
 				</div>
-				<div className={styles.finalHeader}>
+				{/* <div className={styles.finalHeader}>
 					<a
 						href="././cv.pdf"
 						target="blank"
 					>
 						cv
 					</a>
-				</div>
+				</div> */}
 			</header>
 			<div className={styles.leftHeader}>
 				<ul
@@ -98,7 +98,7 @@ export function Header() {
 					</a>
 				
 				</ul>
-				{/* <ul className={styles.linkButtons}>
+				<ul className={styles.linkButtons}>
 				<a
 						href="././cv.pdf"
 						target="blank"
@@ -106,7 +106,7 @@ export function Header() {
 					>
 				<HiDocumentText size={25}/>
 				</a>
-				</ul> */}
+				</ul>
 			</div>
 			<ul className={styles.selectorRight}>
 				<li>

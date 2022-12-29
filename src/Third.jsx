@@ -8,7 +8,6 @@ import { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 
 export function Third() {
-
 	const [loaderScreen, setloaderScreen] = useState([]);
 	setTimeout(setloaderScreen, 3000);
 
@@ -94,9 +93,42 @@ export function Third() {
 
 				<div className={styles.contentMainWrapper}>
 					<div className={styles.boxDivs}>
-						<div className={styles.box1Div}></div>
 						<a
-							className={styles.box2link}
+							className={styles.boxLink}
+							href="https://github.com/thiago-lcarvalho/thiago-dev"
+							target="_blank"
+						>
+							<div className={styles.box1Div}>
+								<div className={styles.div1Text}>
+									<p>
+										As a tech-savvy and design-loving
+										individual, I am constantly on the
+										lookout for the latest and greatest in
+										the world of technology.
+									</p>
+									<br />
+
+									<p>
+										With a background in coding with React
+										and a desire to constantly improve my
+										skills, I am always ready to take on new
+										challenges and push the boundaries of
+										what's possible.
+									</p>
+									<br />
+
+									<p>
+										Whether I'm working on a project that
+										combines coding and design or simply
+										tinkering with the latest tech, I thrive
+										on the thrill of bringing new ideas to
+										life.
+									</p>
+								</div>
+							</div>
+						</a>
+						<a
+							className={styles.boxLink}
 							href="https://github.com/thiago-lcarvalho"
 							target="blank"
 						>
@@ -121,7 +153,6 @@ export function Third() {
 							</div>
 						</a>
 						<div className={styles.box3Div}>
-							<span>Working with APIs</span>
 							<a
 								href={spotifyTrackURL}
 								target="blank"
@@ -143,26 +174,33 @@ export function Third() {
 									</div>
 								</div>
 							</a>
-							<div className={styles.spotifyInfoText}>
-								<p className={styles.apiSpotifyInfo}>
-									Displaying stats of my last heard
-									song on spotify in real time with Axios
-								</p>
-								<div className={styles.apiSpotifyPs}>
-									<p>
-										Fetching data from Spotify API utilizing
-										the Authorization Code Flow.
-										<br />
-										<br />
-										Requesting access token <br />and
-										self-refreshing with Refresh
-										Token
-										<br />
-										<br />
-										Returning requested data
+							<a
+								href="https://github.com/thiago-lcarvalho/thiago-dev/blob/main/src/resources/spotify_api.jsx"
+								target="blank"
+							>
+								<div className={styles.spotifyInfoText}>
+									<p className={styles.apiSpotifyInfo}>
+										Displaying stats of my last heard song
+										on spotify in real time with Axios
 									</p>
+									<div className={styles.apiSpotifyPs}>
+										<p>
+										
+											Fetching data from Spotify API
+											utilizing the Authorization Code
+											Flow.
+											<br />
+											<br />
+											Requesting access token <br />
+											and self-refreshing with Refresh
+											Token
+											<br />
+											<br />
+											Returning requested data
+										</p>
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>

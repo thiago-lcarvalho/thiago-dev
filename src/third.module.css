@@ -130,6 +130,15 @@
 	width: 20rem;
 	height: 35rem;
 	transition: .5s;
+
+}
+
+.box1Div a {
+	opacity: 100%;
+}
+
+.div1Text {
+	width: 250px;
 }
 
 .box2Div {
@@ -149,7 +158,6 @@
 
 .box3Div {
 	margin: 1em;
-	padding: 1em 0;
 	border-radius: 20px;
 	background: linear-gradient(145deg, #f0f0f0, #ef9697);
 	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #ffe4e4;
@@ -225,7 +233,7 @@
 	font-weight: bold;
 }
 
-.box2link {
+.boxLink {
 	opacity: 100%;
 }
 
@@ -299,5 +307,6 @@
 }
 
 .spotifyInfoText {
+	
 	width: 300px;
 }
