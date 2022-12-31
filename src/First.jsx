@@ -8,8 +8,7 @@ export function First() {
 
     return (
         <section>
-            <a name="1"></a>
-            <div className={styles.introMainWrapper}>
+            <section className={styles.introMainWrapper}>
                 <div className={styles.subMainDiv}>
                 <Avatar className={styles.introPhoto} sx={{ width: 100, height: 100 }} alt="Thiago Afonso" src="././important-photo.jpeg"/>
                     <div className={styles.contentIntro}>
@@ -20,7 +19,7 @@ export function First() {
                         Frontend Developer
                     </h1>
                 </div>
-            </div>
+            </section>
         </section>
     )
 }

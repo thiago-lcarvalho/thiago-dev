@@ -129,8 +129,7 @@
 	align-items: center;
 	width: 20rem;
 	height: 35rem;
-	transition: .5s;
-
+	transition: 0.5s;
 }
 
 .box1Div a {
@@ -153,7 +152,7 @@
 	align-items: center;
 	width: 20rem;
 	height: 35rem;
-	transition: .5s;
+	transition: 0.5s;
 }
 
 .box3Div {
@@ -167,7 +166,7 @@
 	align-items: center;
 	width: 20rem;
 	height: 35rem;
-	transition: .5s;
+	transition: 0.5s;
 }
 
 .box1Div:hover {
@@ -200,7 +199,6 @@
 	height: 200px;
 	width: 200px;
 }
-
 
 .divSpotify {
 	background-color: #d8f5e3;
@@ -257,11 +255,11 @@
 .apiSpotifyInfo {
 	font-weight: bold;
 	font-family: var(--font-sans);
-	padding: .5em;
+	padding: 0.5em;
 }
 
 .apiSpotifyPs p {
-	padding: .5em 1em;
+	padding: 0.5em 1em;
 	font-family: var(--font-mono);
 }
 
@@ -307,6 +305,5 @@
 }
 
 .spotifyInfoText {
-	
 	width: 300px;
 }

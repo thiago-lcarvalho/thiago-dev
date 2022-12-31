@@ -1,0 +1,16 @@
+.h1 {
+    color: red;
+}
+
+.contentMainWrapper {
+    padding-left: 96px;
+	padding-right: 96px;
+	margin: 0px 30px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: var(--font-sans);
+}

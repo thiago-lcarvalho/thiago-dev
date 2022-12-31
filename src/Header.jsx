@@ -110,7 +110,7 @@ export function Header() {
 			</div>
 			<ul className={styles.selectorRight}>
 				<li>
-					<a href="#1">
+					<a href="#">
 						<BsFillSquareFill color="#6640E7" />
 					</a>
 				</li>
@@ -122,6 +122,11 @@ export function Header() {
 				<li>
 					<a href="#3">
 						<BsFillSquareFill color="#ee4080" />
+					</a>
+				</li>
+				<li>
+					<a href="#4">
+						<BsFillSquareFill color="#3C79F5" />
 					</a>
 				</li>
 			</ul>

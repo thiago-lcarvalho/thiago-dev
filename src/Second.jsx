@@ -3,19 +3,14 @@ import moment from 'moment';
 import {
 	StackOverflowLogo,
 	FileJsx,
-	FileHtml,
-	FileCss,
 	Code,
 	BracketsCurly,
 	GitBranch,
 	GitPullRequest,
-	GitDiff,
 	TerminalWindow,
-	Activity,
 	Command,
 } from 'phosphor-react';
 import Stack from '@mui/material/Stack';
-import { BsCircle } from 'react-icons/Bs';
 
 export function Second() {
 	var timeStartedDev = moment('2022-07-06T18:00:00Z');
@@ -25,7 +20,7 @@ export function Second() {
 	return (
 		<section>
 			<a name="2"></a>
-			<div className={styles.contentMainWrapper}>
+			<section className={styles.contentMainWrapper}>
 				<div className={styles.iconsBackground}>
 					<StackOverflowLogo
 						className={styles.iconsBackground1}
@@ -198,7 +193,7 @@ export function Second() {
 					</Stack>
 				</div>
 				<div className={styles.secondBox}></div>
-			</div>
+			</section>
 		</section>
 	);
 }
