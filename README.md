@@ -29,3 +29,5 @@ I'LL FINISH THIS WEBSITE THIS TIME!!!!!
 22/12 19:51 - feels good never having to grab spotify api token again, im learning so much doing this project
 
 29/12 13:03 - almost finished with the cards and almost ready to deploy on firebase
+
+31/12 11:40 - added contact page skeleton
