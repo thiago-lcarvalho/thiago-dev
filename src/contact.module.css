@@ -13,4 +13,28 @@
 	align-items: center;
 	height: 100vh;
 	font-family: var(--font-sans);
+    gap: 2.5em;
+}
+
+.boxDiv {
+	margin: 1em;
+	font-family: var(--font-sans);
+	border-radius: 20px;
+	background: linear-gradient(145deg, #f0f0f0, #81A8F7);
+	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #bbd2ff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 64rem;
+	height: 30rem;
+	transition: 0.5s;
+}
+
+.boxDiv:hover {
+    box-shadow: 12px 12px 36px #6b6b6b, -12px -12px 36px #81A8F7;    
+}
+
+.contactLink {
+    font-family: var(--font-sans);
 }

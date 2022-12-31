@@ -95,7 +95,7 @@ export function Third() {
 					<div className={styles.boxDivs}>
 						<a
 							className={styles.boxLink}
-							href="https://github.com/thiago-lcarvalho/thiago-dev"
+							href="https://www.linkedin.com/in/thiagoalcarvalho/"
 							target="_blank"
 						>
 							<div className={styles.box1Div}>

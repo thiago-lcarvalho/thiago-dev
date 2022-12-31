@@ -170,15 +170,15 @@
 }
 
 .box1Div:hover {
-	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #b9a8ff;
+	box-shadow: 12px 12px 36px #6b6b6b, -12px -12px 36px #b9a8ff;
 }
 
 .box2Div:hover {
-	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #8bffea;
+	box-shadow: 12px 12px 36px #6b6b6b, -12px -12px 36px #8bffea;
 }
 
 .box3Div:hover {
-	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #ef9697;
+	box-shadow: 12px 12px 36px #6b6b6b, -12px -12px 36px #ef9697;
 }
 
 .box1Div span {
