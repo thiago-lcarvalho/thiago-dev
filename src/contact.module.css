@@ -20,8 +20,8 @@
 	margin: 1em;
 	font-family: var(--font-sans);
 	border-radius: 20px;
-	background: linear-gradient(145deg, #f0f0f0, #81A8F7);
-	box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #bbd2ff;
+	/* background: linear-gradient(145deg, #f0f0f0, #81A8F7); */
+	/* box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #bbd2ff; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

@@ -1,4 +1,4 @@
-import { SpotifyLogo, CloudRain, InstagramLogo } from 'phosphor-react';
+import { SpotifyLogo } from 'phosphor-react';
 import styles from './third.module.css';
 import GitHubCalendar from 'react-github-calendar';
 import { resSpotify } from './resources/spotify_api';
@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 
 export function Third() {
+	console.log(GitHubCalendar)
 	const [loaderScreen, setloaderScreen] = useState([]);
 	setTimeout(setloaderScreen, 3000);
 
@@ -54,21 +55,18 @@ export function Third() {
 	const spotifyTrackArtist = resSpotify.data.items[0].track.artists[0].name;
 
 	const sinceStart = (contributions) => {
-		const currentYear = new Date().getFullYear();
-		const currentMonth = new Date().getMonth();
-		const shownMonths = 2;
-
+		const currentDate = new Date();
+		const shownDays = 60;
+	  
 		return contributions.filter((day) => {
-			const date = new Date(day.date);
-			const monthOfDay = date.getMonth();
-
-			return (
-				date.getFullYear() === currentYear &&
-				monthOfDay > currentMonth - shownMonths &&
-				monthOfDay <= currentMonth
-			);
+		  const date = new Date(day.date);
+		  const timeDifference = currentDate - date;
+		  const daysDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
+	  
+		  return daysDifference <= shownDays;
 		});
-	};
+	  };	  
+	  
 	return (
 		<>
 			<div id={loaderScreen ? styles.overlay : styles.blank}>
