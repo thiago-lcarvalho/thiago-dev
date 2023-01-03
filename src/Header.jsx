@@ -8,10 +8,6 @@ import Avatar from '@mui/material/Avatar';
 import { resSpotify } from './resources/spotify_api';
 
 export function Header() {
-	const spotifyTrack = resSpotify.data.items[0].track.name;
-	const spotifyTrackIMG = resSpotify.data.items[0].track.album.images[1].url;
-	const spotifyTrackArtist = resSpotify.data.items[0].track.artists[0].name;
-
 	return (
 		<>
 			<header className={styles.header}>
@@ -30,14 +26,6 @@ export function Header() {
 					</a>
 					<span>thank you for visiting ❤️</span>
 				</div>
-				{/* <div className={styles.finalHeader}>
-					<a
-						href="././cv.pdf"
-						target="blank"
-					>
-						cv
-					</a>
-				</div> */}
 			</header>
 			<div className={styles.leftHeader}>
 				<ul
@@ -90,22 +78,21 @@ export function Header() {
 					className={styles.linkButtons}
 				>
 					<a
-						href="mailto:thiagoafonso07@hotmail.com"
+						href="mailto:eu@thiagoafonso.com"
 						target="blank"
 						title="Send E-mail"
 					>
 						<MdOutlineEmail size={25} />
 					</a>
-				
 				</ul>
 				<ul className={styles.linkButtons}>
-				<a
+					<a
 						href="././cv.pdf"
 						target="blank"
 						title="Open CV"
 					>
-				<HiDocumentText size={25}/>
-				</a>
+						<HiDocumentText size={25} />
+					</a>
 				</ul>
 			</div>
 			<ul className={styles.selectorRight}>

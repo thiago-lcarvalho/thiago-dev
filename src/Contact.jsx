@@ -7,15 +7,15 @@ export function Contact() {
 			<a name="4"></a>
 			<div className={styles.boxDiv}>
 				<span className={styles.contactFirst}>What's next</span>
-				<span>
+				<p>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 					<br />
 					Illo incidunt dolorem facere rerum accusantium assumenda,
-				</span>
+				</p>
 				<Button
 					onClick={() => {
-						window.open(`mailto:eu@thiagoafonso.com`);
-					}}
+                        window.location.href = "mailto:eu@thiagoafonso.com";
+                      }}
 					variant="outlined"
 				>
 					Send E-mail
