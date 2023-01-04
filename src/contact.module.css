@@ -1,9 +1,5 @@
-.h1 {
-    color: red;
-}
-
 .contentMainWrapper {
-    padding-left: 96px;
+	padding-left: 96px;
 	padding-right: 96px;
 	margin: 0px 30px;
 	position: relative;
@@ -13,15 +9,11 @@
 	align-items: center;
 	height: 100vh;
 	font-family: var(--font-sans);
-    gap: 2.5em;
+	gap: 2.5em;
 }
 
 .boxDiv {
-	margin: 1em;
-	font-family: var(--font-sans);
 	border-radius: 20px;
-	/* background: linear-gradient(145deg, #f0f0f0, #81A8F7); */
-	/* box-shadow: 12px 12px 36px #a6a6a6, -12px -12px 36px #bbd2ff; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -32,9 +24,131 @@
 }
 
 .boxDiv:hover {
-    box-shadow: 12px 12px 36px #6b6b6b, -12px -12px 36px #81A8F7;    
+	box-shadow: 12px 12px 36px #6b6b6b, -12px -12px 36px #81a8f7;
 }
 
 .contactLink {
-    font-family: var(--font-sans);
+	font-family: var(--font-sans);
+	position: absolute;
+	bottom: 5%;
+
+}
+
+.contactSecond {
+	font-size: 4em;
+	transition: 1s;
+	opacity: 0%;
+}
+
+.boxDiv:hover .contactSecond {
+	opacity: 100%;
+}
+
+.contactFirst {
+	position: absolute;
+	font-size: 4em;
+	transition: 0.3s;
+}
+
+.boxDiv:hover .contactFirst {
+	opacity: 0%;
+}
+
+.bar {
+	background-color: transparent;
+	height: 4em;
+	border-radius: 40px;
+	width: 2px;
+	margin: 1em;
+	transition: 1s;
+	transition-delay: 0ms;
+}
+
+.boxDiv:hover .bar {
+	background-color: #3c79f5;
+}
+
+.bar2 {
+	background-color: transparent;
+	height: 4em;
+	border-radius: 40px;
+	width: 2px;
+	margin: 1em;
+	transition: 1s;
+	transition-delay: 800ms;
+}
+
+.boxDiv:hover .bar2 {
+	background-color: #3c79f5;
+}
+
+.contactP {
+	opacity: 0%;
+	transition: 1s;
+	transition-delay: 400ms;
+}
+
+.boxDiv:hover .contactP {
+	opacity: 100%;
+}
+
+.boxDiv:hover .buttonContainer {
+	opacity: 100%;
+}
+
+.buttonContainer {
+	opacity: 0%;
+	transition: 1s;
+	transition-delay: 1200ms;
+}
+
+.contactButton {
+	align-items: center;
+	background-clip: padding-box;
+	background-color: #4a83f5;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+	box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: system-ui, -apple-system, system-ui, 'Helvetica Neue',
+		Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	justify-content: center;
+	line-height: 1.25;
+	margin: 0;
+	min-height: 3rem;
+	padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+	position: relative;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	transition: all 250ms;
+	touch-action: manipulation;
+	vertical-align: baseline;
+	width: auto;
+}
+
+.contactButton:hover {
+
+	background-color: #3C79F5;
+}
+
+.contactButton:hover,
+.contactButton:focus {
+	background-color: #3C79F5;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.contactButton:hover {
+	transform: translateY(-1px);
+}
+
+.contactButton:active {
+	background-color: #81A8F7;
+	box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+	transform: translateY(0);
 }

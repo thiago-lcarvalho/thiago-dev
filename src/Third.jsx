@@ -8,7 +8,6 @@ import { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 
 export function Third() {
-	console.log(GitHubCalendar)
 	const [loaderScreen, setloaderScreen] = useState([]);
 	setTimeout(setloaderScreen, 3000);
 
@@ -57,16 +56,18 @@ export function Third() {
 	const sinceStart = (contributions) => {
 		const currentDate = new Date();
 		const shownDays = 60;
-	  
+
 		return contributions.filter((day) => {
-		  const date = new Date(day.date);
-		  const timeDifference = currentDate - date;
-		  const daysDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
-	  
-		  return daysDifference <= shownDays;
+			const date = new Date(day.date);
+			const timeDifference = currentDate - date;
+			const daysDifference = Math.ceil(
+				timeDifference / (1000 * 3600 * 24)
+			);
+
+			return daysDifference <= shownDays;
 		});
-	  };	  
-	  
+	};
+
 	return (
 		<>
 			<div id={loaderScreen ? styles.overlay : styles.blank}>
@@ -183,7 +184,6 @@ export function Third() {
 									</p>
 									<div className={styles.apiSpotifyPs}>
 										<p>
-										
 											Fetching data from Spotify API
 											utilizing the Authorization Code
 											Flow.
