@@ -314,7 +314,11 @@
 	}
 
 	.contentMainWrapper {
-		margin: 5em;
+		margin: 25em 0;
+	}
+
+	.mainMainWrapper {
+		margin: 0;
 	}
 }
 

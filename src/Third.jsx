@@ -69,7 +69,7 @@ export function Third() {
 	};
 
 	return (
-		<>
+	<>
 			<a
 				name="3"
 				className={styles.disabledLink}
