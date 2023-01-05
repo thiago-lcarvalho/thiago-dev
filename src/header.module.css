@@ -107,17 +107,6 @@ a:hover {
 
 }
 
-.rightHeader {
-    width: 2.5rem;
-    position: fixed;
-    bottom: 0px;
-    right: 2.5rem;
-    left: auto;
-    z-index: 11;
-    writing-mode: vertical-lr;
-    padding-bottom: 2em;
-}
-
 .selectorRight {
     width: 40px;
     position: fixed;
@@ -131,19 +120,14 @@ a:hover {
     margin-bottom: 8px;
 }
 
-@media only screen and (max-device-width: 500px) {
+@media (max-width: 800px) {
 
-    .rightHeader {
-        bottom: 0px;
-        right: auto;
-        top: 30%;
-        text-align: start;
+    .selectorRight {
+        opacity: 0%;
     }
 
     .leftHeader {
-        text-align: start;
-        top: 15%;
-        left: 3px
+        opacity: 0%
     }
 
     .header {

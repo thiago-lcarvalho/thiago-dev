@@ -307,3 +307,17 @@
 .spotifyInfoText {
 	width: 300px;
 }
+
+@media (max-width: 1200px) {
+	.boxDivs {
+		flex-direction: column;
+	}
+
+	.contentMainWrapper {
+		margin: 5em;
+	}
+}
+
+.disabledLink {
+	opacity: 100%;
+}

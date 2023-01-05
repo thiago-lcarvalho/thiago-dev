@@ -1,62 +1,72 @@
 :root {
-    --font-sans: "Ubuntu", "Poppins", "Inter", "San Francisco", "SF Pro Text", sans-serif;
-    --font-mono: "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-    --easing: cubic-bezier(0.65, 0.05, 0.36, 1);
-    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    --white: #fff;
-    --gray-100: #e1e1e6;
-    --gray-300: #c4c4cc;
-    --gray-400: #8d8d99;
-    --gray-600: #323238;
-    --gray-700: #29292e;
-    --gray-800: #202024;
-    --gray-900: #121214;
-    --green-300: #00B37E;
-    --green-500: #00875f;
-    --red-500: #F75A68;
-    --font-bold: 600;
-    --fsz-xxs: 0.75rem;
-    --fsz-cap: 0.785rem;
-    --fsz-sec: 1rem;
-    --fsz-pri: 1.15rem;
-    --fsz-heading: 2rem;
+	--font-sans: 'Ubuntu', 'Poppins', 'Inter', 'San Francisco', 'SF Pro Text',
+		sans-serif;
+	--font-mono: 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+	--easing: cubic-bezier(0.65, 0.05, 0.36, 1);
+	--transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+	--white: #fff;
+	--gray-100: #e1e1e6;
+	--gray-300: #c4c4cc;
+	--gray-400: #8d8d99;
+	--gray-600: #323238;
+	--gray-700: #29292e;
+	--gray-800: #202024;
+	--gray-900: #121214;
+	--green-300: #00b37e;
+	--green-500: #00875f;
+	--red-500: #f75a68;
+	--font-bold: 600;
+	--fsz-xxs: 0.75rem;
+	--fsz-cap: 0.785rem;
+	--fsz-sec: 1rem;
+	--fsz-pri: 1.15rem;
+	--fsz-heading: 2rem;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    -moz-osx-font-smoothing: inherit;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	-moz-osx-font-smoothing: inherit;
+    max-width: 100%;
+	overflow-x: hidden;
 }
 
 #root {
-    margin: 0 auto;
-    text-align: center;
-
+	margin: 0 auto;
+	text-align: center;
 }
 
 :focus {
-    outline: none;
-    box-shadow: none;
+	outline: none;
+	box-shadow: none;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(to left bottom, #ffffff, #eaf0fb, #cbe4f6, #a5d9ea, #80cfd3);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    scroll-behavior: smooth;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(
+		to left bottom,
+		#ffffff,
+		#eaf0fb,
+		#cbe4f6,
+		#a5d9ea,
+		#80cfd3
+	);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	scroll-behavior: smooth;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -64,11 +74,3 @@ html {
 		scroll-behavior: auto;
 	}
 }
-
-
-
-/* .dark {
-    transition: .3s;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-} */
