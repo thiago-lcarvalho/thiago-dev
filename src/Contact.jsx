@@ -1,4 +1,7 @@
 import styles from './contact.module.css';
+import { RiGithubFill, RiLinkedinFill, RiInstagramFill } from 'react-icons/Ri';
+import { HiDocumentText } from 'react-icons/Hi';
+import { MdOutlineEmail } from 'react-icons/Md';
 
 export function Contact() {
 	return (
@@ -19,14 +22,82 @@ export function Contact() {
 				<div className={styles.bar2}></div>
 				<div className={styles.buttonContainer}>
 					<a href="mailto:eu@thiagoafonso.com">
-					<button
-						className={styles.contactButton}
-						role="button"
-					>
-						Say Hello
-					</button>
+						<button
+							className={styles.contactButton}
+							role="button"
+						>
+							Say Hello
+						</button>
 					</a>
 				</div>
+			</div>
+			<div className={styles.finalHeader}>
+				<ul
+					title="LinkedIn Profile"
+					className={styles.linkButtons}
+				>
+					<a
+						href="https://www.linkedin.com/in/thiagoalcarvalho/"
+						target="blank"
+						title="LinkedIn Profile"
+					>
+						<RiLinkedinFill
+							size={25}
+							title="LinkedIn Profile"
+						/>
+					</a>
+				</ul>
+				<ul
+					title="GitHub Profile"
+					className={styles.linkButtons}
+				>
+					<a
+						href="https://github.com/thiago-lcarvalho"
+						target="blank"
+						title="GitHub Profile"
+					>
+						<RiGithubFill
+							size={25}
+							title="GitHub Profile"
+						/>
+					</a>
+				</ul>
+				<ul
+					title="Instagram Profile"
+					className={styles.linkButtons}
+				>
+					<a
+						href="https://www.instagram.com/sothiagomesmo/"
+						target="blank"
+						title="Instagram Profile"
+					>
+						<RiInstagramFill
+							size={25}
+							title="Instagram Profile"
+						/>
+					</a>
+				</ul>
+				<ul
+					title="Send E-mail"
+					className={styles.linkButtons}
+				>
+					<a
+						href="mailto:eu@thiagoafonso.com"
+						target="blank"
+						title="Send E-mail"
+					>
+						<MdOutlineEmail size={25} />
+					</a>
+				</ul>
+				<ul className={styles.linkButtons}>
+					<a
+						href="././cv.pdf"
+						target="blank"
+						title="Open CV"
+					>
+						<HiDocumentText size={25} />
+					</a>
+				</ul>
 			</div>
 			<a
 				className={styles.contactLink}

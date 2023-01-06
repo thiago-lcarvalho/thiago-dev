@@ -1,11 +1,10 @@
-import { Atom, SpotifyLogo } from 'phosphor-react';
+import { Atom } from 'phosphor-react';
 import styles from './header.module.css';
 import { RiGithubFill, RiLinkedinFill, RiInstagramFill } from 'react-icons/Ri';
 import { HiDocumentText } from 'react-icons/Hi';
-import { BsFillSquareFill } from 'react-icons/Bs';
 import { MdOutlineEmail } from 'react-icons/Md';
+import { BsFillSquareFill } from 'react-icons/Bs';
 import Avatar from '@mui/material/Avatar';
-import { resSpotify } from './resources/spotify_api';
 
 export function Header() {
 	return (

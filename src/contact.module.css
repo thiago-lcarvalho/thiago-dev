@@ -152,3 +152,20 @@
 	box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
 	transform: translateY(0);
 }
+
+.finalHeader {
+		display: flex;
+		width: 15.5em;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		right: auto;
+		opacity: 0%;
+		gap: 13%;
+}
+
+@media (max-width: 800px) {
+	.finalHeader {
+		opacity: 100%;
+	}
+}
