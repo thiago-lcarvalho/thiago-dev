@@ -9,6 +9,7 @@ import Avatar from '@mui/material/Avatar';
 export function Header() {
 	return (
 		<>
+		<a name="1"></a>
 			<header className={styles.header}>
 				<div className={styles.nameAndRole}>
 					<a href="#">
@@ -96,7 +97,7 @@ export function Header() {
 			</div>
 			<ul className={styles.selectorRight}>
 				<li>
-					<a href="#">
+					<a href="#1">
 						<BsFillSquareFill color="#6640E7" />
 					</a>
 				</li>
