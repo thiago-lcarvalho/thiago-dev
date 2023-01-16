@@ -12,11 +12,9 @@ export function Contact() {
 				<span className={styles.contactFirst}>Get in touch!</span>
 				<div className={styles.bar}></div>
 				<p className={styles.contactP}>
-					I am currently seeking new challenges in the tech industry!{' '}
-					<br />
+					I am currently seeking new challenges in the tech industry!<br/>
 					If you have a potential project or position that aligns with
-					my skills and experience, reach out! <br />I am constantly
-					on the lookout for opportunities to challenge myself.
+					my skills and experience, reach out!
 				</p>
 				<div className={styles.bar2}></div>
 				<div className={styles.buttonContainer}>

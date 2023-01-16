@@ -29,7 +29,7 @@ body {
 	margin: 0;
 	padding: 0;
 	-moz-osx-font-smoothing: inherit;
-    max-width: 100%;
+	max-width: 100%;
 	overflow-x: hidden;
 }
 
@@ -52,6 +52,8 @@ body {
 html {
 	height: 100%;
 	width: 100%;
+	background-size: 100%;
+	background-size: cover;
 	background-image: linear-gradient(
 		to left bottom,
 		#ffffff,
@@ -72,3 +74,4 @@ html {
 		scroll-behavior: auto;
 	}
 }
+

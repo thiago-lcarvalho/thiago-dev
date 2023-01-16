@@ -31,6 +31,7 @@
 	font-family: var(--font-sans);
 	position: absolute;
 	bottom: 5%;
+	white-space: nowrap;
 
 }
 
@@ -167,6 +168,62 @@
 
 @media (max-width: 800px) {
 	.finalHeader {
+		opacity: 100%;
+	}
+}
+
+@media (max-width: 1060px) {
+	.boxDiv {
+		width: 20rem;
+		padding: 5em 2em;
+	}
+
+	.boxDiv {
+		box-shadow: 12px 12px 36px #6b6b6b, -12px -12px 36px #81a8f7;
+	}
+	
+	.contactLink {
+		font-family: var(--font-sans);
+		position: absolute;
+		bottom: 5%;
+	
+	}
+	
+	.contactFirst {
+		position: static;
+		transition: 0s;
+		font-size: 40px;
+		white-space: nowrap;
+	}
+	
+	.bar {
+		background-color: #3c79f5;
+		height: 4em;
+		border-radius: 40px;
+		width: 2px;
+		margin: 1em;
+		transition: 1s;
+		transition-delay: 0ms;
+	}
+	
+	.bar2 {
+		background-color: #3c79f5;
+		height: 4em;
+		border-radius: 40px;
+		width: 2px;
+		margin: 1em;
+		transition: 1s;
+		transition-delay: 800ms;
+	}
+
+	
+	.contactP {
+		opacity: 100%;
+		transition: 1s;
+		transition-delay: 400ms;
+	}
+	
+	.buttonContainer {
 		opacity: 100%;
 	}
 }

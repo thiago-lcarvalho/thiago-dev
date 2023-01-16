@@ -24,13 +24,6 @@ export function First() {
 							options={{
 							
 								strings: [
-									'',
-									'Developer',
-									'Designer',
-									'Artist',
-									'Developer',
-									'Designer',
-									'Artist',
 									'Developer',
 									'Designer',
 									'Artist',

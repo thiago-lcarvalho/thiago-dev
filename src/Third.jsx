@@ -195,7 +195,7 @@ export function Third() {
 										and self-refreshing with Refresh Token
 										<br />
 										<br />
-										Returning requested data
+										Click to check code
 									</p>
 								</div>
 							</div>
