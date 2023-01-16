@@ -313,6 +313,9 @@
 		flex-direction: column;
 	}
 
+	.box2Div {
+		margin: 3em 1em;
+	}
 	.contentMainWrapper {
 		margin: 25em 0;
 	}
