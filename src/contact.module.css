@@ -32,7 +32,6 @@
 	position: absolute;
 	bottom: 5%;
 	white-space: nowrap;
-
 }
 
 .contactSecond {
@@ -48,7 +47,7 @@
 .contactFirst {
 	position: absolute;
 	font-size: 4em;
-	transition:0.3s;
+	transition: 0.3s;
 }
 
 .boxDiv:hover .contactFirst {
@@ -135,13 +134,12 @@
 }
 
 .contactButton:hover {
-
-	background-color: #3C79F5;
+	background-color: #3c79f5;
 }
 
 .contactButton:hover,
 .contactButton:focus {
-	background-color: #3C79F5;
+	background-color: #3c79f5;
 	box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
@@ -150,20 +148,20 @@
 }
 
 .contactButton:active {
-	background-color: #81A8F7;
+	background-color: #81a8f7;
 	box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
 	transform: translateY(0);
 }
 
 .finalHeader {
-		display: flex;
-		width: 15.5em;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		right: auto;
-		opacity: 0%;
-		gap: 13%;
+	display: flex;
+	width: 15.5em;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	right: auto;
+	opacity: 0%;
+	gap: 13%;
 }
 
 @media (max-width: 800px) {
@@ -181,21 +179,20 @@
 	.boxDiv {
 		box-shadow: 12px 12px 36px #6b6b6b, -12px -12px 36px #81a8f7;
 	}
-	
+
 	.contactLink {
 		font-family: var(--font-sans);
 		position: absolute;
 		bottom: 5%;
-	
 	}
-	
+
 	.contactFirst {
 		position: static;
 		transition: 0s;
 		font-size: 40px;
 		white-space: nowrap;
 	}
-	
+
 	.bar {
 		background-color: #3c79f5;
 		height: 4em;
@@ -205,7 +202,7 @@
 		transition: 1s;
 		transition-delay: 0ms;
 	}
-	
+
 	.bar2 {
 		background-color: #3c79f5;
 		height: 4em;
@@ -216,13 +213,12 @@
 		transition-delay: 800ms;
 	}
 
-	
 	.contactP {
 		opacity: 100%;
 		transition: 1s;
 		transition-delay: 400ms;
 	}
-	
+
 	.buttonContainer {
 		opacity: 100%;
 	}
