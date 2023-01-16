@@ -1,5 +1,6 @@
 import styles from './first.module.css';
 import Avatar from '@mui/material/Avatar';
+import Typewriter from 'typewriter-effect';
 
 export function First() {
 	return (
@@ -14,11 +15,31 @@ export function First() {
 					/>
 					<div className={styles.contentIntro}>
 						<span className={styles.IntroHello}>
-							Hello, my name is{' '}
+							Hello, my name is
 						</span>
 						<span className={styles.IntroName}>Thiago Afonso</span>
 					</div>
-					<h1 className={styles.frontTitle}>Frontend Developer</h1>
+					<h1 className={styles.frontTitle}>
+						<Typewriter
+							options={{
+							
+								strings: [
+									'',
+									'Developer',
+									'Designer',
+									'Artist',
+									'Developer',
+									'Designer',
+									'Artist',
+									'Developer',
+									'Designer',
+									'Artist',
+								],
+								autoStart: true,
+								loop: true,
+							}}
+						/>
+					</h1>
 				</div>
 			</section>
 		</section>

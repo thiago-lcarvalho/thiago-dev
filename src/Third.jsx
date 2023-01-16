@@ -9,7 +9,7 @@ import Box from '@mui/material/Box';
 
 export function Third() {
 	const [loaderScreen, setloaderScreen] = useState([]);
-	setTimeout(setloaderScreen, 3000);
+	setTimeout(setloaderScreen, 1000);
 
 	const [resNasa, setResNasa] = useState([]);
 	const [loadingAPI, setLoading] = useState(true);

@@ -27,7 +27,8 @@
     "react-icons": "^4.6.0",
     "react-moment": "^1.1.2",
     "react-responsive-carousel": "^3.2.23",
-    "react-use-scroll-snap": "^0.0.4"
+    "react-use-scroll-snap": "^0.0.4",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
