@@ -83,8 +83,7 @@
 }
 
 .hoursSinceDiv {
-	display: grid;
-	grid-template-columns: 11.5em 11em;
+	display: flex;
 	margin-left: auto;
 	margin-right: auto;
 	justify-content: center;
@@ -93,7 +92,6 @@
 
 .hoursSinceText {
 	font-family: var(--font-sans);
-	width: fit-content;
 	padding-top: 0.9em;
 	font-size: var(--fsz-pri);
 	text-align: left;
@@ -223,6 +221,10 @@
 	.hoursSinceHiddenText {
 		opacity: 100%;
 	}
+	.hoursSinceText {
+		font-size: var(--fsz-pri);
+		line-height: .95rem;
+	}
 	.stackDiv {
 		opacity: 100%;
 	}
@@ -238,45 +240,84 @@
 	.iconsBackground1 {
 		opacity: 0%;
 		z-index: -1;	
+		top: 50%;
 		left: 26.2%;
 	}
 	
 	.iconsBackground2 {
 		opacity: 0%;
 		z-index: -1;
+		top: 50%;
 		left: 35%;
 	}
 	
 	.iconsBackground3 {
 		opacity: 0%;
 		z-index: -1;
+		top: 50%;
 		left: 43.5%;
 	}
 	
 	.iconsBackground4 {
 		opacity: 0%;
 		z-index: -1;
+		top: 50%;
 		left: 52%;
 	}
 	
 	.iconsBackground5 {
 		opacity: 0%;
 		z-index: -1;
+		top: 50%;
 		left: 60.4%;
 	}
 	
 	.iconsBackground6 {
 		opacity: 0%;
 		z-index: -1;
+		top: 50%;
 	}
 	
 	.iconsBackground7 {
 		opacity: 0%;
 		z-index: -1;
+		top: 50%;
 	}
 	
 	.iconsBackground8 {
 		opacity: 0%;
-		z-index: -100;
+			top: 50%;z-index: -100;
+
+	}
+	.contentMainWrapper:hover .iconsBackground1 {
+		opacity: 0%;
+	}
+	
+	.contentMainWrapper:hover .iconsBackground2 {
+		opacity: 0%;
+	}
+	
+	.contentMainWrapper:hover .iconsBackground3 {
+		opacity: 0%;
+	}
+	
+	.contentMainWrapper:hover .iconsBackground4 {
+		opacity: 0%;
+	}
+	
+	.contentMainWrapper:hover .iconsBackground5 {
+		opacity: 0%;
+	}
+	
+	.contentMainWrapper:hover .iconsBackground6 {
+		opacity: 0%;
+	}
+	
+	.contentMainWrapper:hover .iconsBackground7 {
+		opacity: 0%;
+	}
+	
+	.contentMainWrapper:hover .iconsBackground8 {
+		opacity: 0%;
 	}
 }
