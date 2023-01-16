@@ -50,6 +50,8 @@ body {
 }
 
 html {
+	overflow-x: hidden;
+	position: relative;
 	height: 100%;
 	width: 100%;
 	background-size: 100%;
@@ -60,8 +62,7 @@ html {
 		#eaf0fb,
 		#cbe4f6,
 		#a5d9ea,
-		#80cfd3
-	);
+		#80cfd3);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -74,4 +75,5 @@ html {
 		scroll-behavior: auto;
 	}
 }
+
 
