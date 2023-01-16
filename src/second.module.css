@@ -44,7 +44,7 @@
 
 .paperDiv:hover {
 	background: #ffffff47;
-	box-shadow: -12px -12px 33px #e6e6e673, 12px 12px 33px #ffffffb3;
+	box-shadow: -12px -12px 33px #e6e6e673, 12px 12px 33px #a5ffb6b3;
 }
 
 .hoursSince {
@@ -100,16 +100,6 @@
 	line-height: 1.3rem;
 }
 
-@media only screen and (max-device-width: 500px) {
-	.hoursSince {
-		filter: blur(0px);
-	}
-
-	.hoursSinceHiddenText {
-		opacity: 100%;
-	}
-}
-
 .contentMainWrapper:hover .iconsBackground1 {
 	opacity: 100%;
 }
@@ -141,7 +131,6 @@
 .contentMainWrapper:hover .iconsBackground8 {
 	opacity: 100%;
 }
-
 
 .iconsBackground {
 	height: max-content;
@@ -219,4 +208,75 @@
 	transition: 1s;
 	transition-delay: 1600ms;
 	opacity: 0%;
+}
+
+@media (max-width: 1060px) {
+
+	.paperDiv {
+		width: 20em;
+	}
+
+	.hoursSince {
+		filter: blur(0px);
+		font-size: 4rem ;
+	}
+	.hoursSinceHiddenText {
+		opacity: 100%;
+	}
+	.stackDiv {
+		opacity: 100%;
+	}
+
+	.paperDiv:hover {
+		background: #ffffff47;
+		box-shadow: -12px -12px 33px #e6e6e673, 12px 12px 33px #a5ffb6b3;
+	}
+	.paperDiv {
+		background: #ffffff47;
+		box-shadow: -12px -12px 33px #e6e6e673, 12px 12px 33px #a5ffb6b3;
+	}
+	.iconsBackground1 {
+		opacity: 0%;
+		z-index: -1;	
+		left: 26.2%;
+	}
+	
+	.iconsBackground2 {
+		opacity: 0%;
+		z-index: -1;
+		left: 35%;
+	}
+	
+	.iconsBackground3 {
+		opacity: 0%;
+		z-index: -1;
+		left: 43.5%;
+	}
+	
+	.iconsBackground4 {
+		opacity: 0%;
+		z-index: -1;
+		left: 52%;
+	}
+	
+	.iconsBackground5 {
+		opacity: 0%;
+		z-index: -1;
+		left: 60.4%;
+	}
+	
+	.iconsBackground6 {
+		opacity: 0%;
+		z-index: -1;
+	}
+	
+	.iconsBackground7 {
+		opacity: 0%;
+		z-index: -1;
+	}
+	
+	.iconsBackground8 {
+		opacity: 0%;
+		z-index: -100;
+	}
 }

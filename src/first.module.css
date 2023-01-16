@@ -52,6 +52,7 @@
 
 .IntroName {
     font-size: 3rem;
+    display: inline-block;
 }
 
 .hoursSince {
