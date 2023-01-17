@@ -13,7 +13,7 @@ const data = {
 	refresh_token: REFRESH_TOKEN,
 };
 
-const res = axios
+let res = axios
 	.post('https://accounts.spotify.com/api/token', qs.stringify(data), headers)
 	.then((res) => res.data.access_token);
 

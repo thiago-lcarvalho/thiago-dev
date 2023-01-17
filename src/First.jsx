@@ -11,7 +11,7 @@ export function First() {
 						className={styles.introPhoto}
 						sx={{ width: 150, height: 150 }}
 						alt="Thiago Afonso"
-						src="././self-photo.jpeg"
+						src="/assets/self-photo.jpeg"
 					/>
 					<div className={styles.contentIntro}>
 						<span className={styles.IntroHello}>

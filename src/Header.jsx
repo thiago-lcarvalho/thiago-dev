@@ -21,7 +21,7 @@ export function Header() {
 							className={styles.introPhoto}
 							sx={{ width: 40, height: 40 }}
 							alt="Thiago Afonso"
-							src="././important-photo-2.png"
+							src="assets/important-photo-2.png"
 						/>
 					</a>
 					<span>thank you for visiting ❤️</span>
@@ -87,7 +87,7 @@ export function Header() {
 				</ul>
 				<ul className={styles.linkButtons}>
 					<a
-						href="././cv.pdf"
+						href="/assets/cv.pdf"
 						target="blank"
 						title="Open CV"
 					>

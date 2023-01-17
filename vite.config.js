@@ -5,12 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    configureWebpack: (config) => {
-      config.module.rules.push({
-        test: /\.js$/,
-        use: 'babel-loader',
-        exclude: /node_modules/,
-      });
-    },
-  },
+    minify: 'esbuild',
+    target: "esnext"
+  }
 })
