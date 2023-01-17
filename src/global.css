@@ -50,6 +50,7 @@ body {
 }
 
 html {
+	padding: env(safe-area-inset);
 	overflow-x: hidden;
 	position: relative;
 	height: 100%;
