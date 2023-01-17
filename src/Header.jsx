@@ -21,7 +21,7 @@ export function Header() {
 							className={styles.introPhoto}
 							sx={{ width: 40, height: 40 }}
 							alt="Thiago Afonso"
-							src="assets/important-photo-2.png"
+							src="/assets/important-photo-2.png"
 						/>
 					</a>
 					<span>thank you for visiting ❤️</span>
