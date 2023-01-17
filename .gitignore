@@ -26,3 +26,5 @@ spotifyAPIkey.jsx
 nasaAPIkey.jsx
 API_KEYS.jsx
 dist
+package.json
+package-lock.json
