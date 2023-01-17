@@ -1,7 +1,7 @@
 .contentMainWrapper {
 	padding-left: 96px;
 	padding-right: 96px;
-	margin: 0px 30px;
+	margin: 0 30px;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -57,9 +57,9 @@
 
 .bar {
 	background-color: transparent;
-	height: 4em;
+	height: 2px;
 	border-radius: 40px;
-	width: 2px;
+	width: 4em;
 	margin: 1em;
 	transition: 1s;
 	transition-delay: 0ms;
@@ -71,9 +71,9 @@
 
 .bar2 {
 	background-color: transparent;
-	height: 4em;
+	height: 2px;
 	border-radius: 40px;
-	width: 2px;
+	width: 4em;
 	margin: 1em;
 	transition: 1s;
 	transition-delay: 800ms;
@@ -195,9 +195,9 @@
 
 	.bar {
 		background-color: #3c79f5;
-		height: 4em;
+		height: 2px;
 		border-radius: 40px;
-		width: 2px;
+		width: 4em;
 		margin: 1em;
 		transition: 1s;
 		transition-delay: 0ms;
@@ -205,12 +205,12 @@
 
 	.bar2 {
 		background-color: #3c79f5;
-		height: 4em;
+		height: 2px;
 		border-radius: 40px;
-		width: 2px;
+		width: 4em;
 		margin: 1em;
 		transition: 1s;
-		transition-delay: 800ms;
+		transition-delay: 0ms;
 	}
 
 	.contactP {

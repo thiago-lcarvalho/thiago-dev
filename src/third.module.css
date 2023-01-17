@@ -317,29 +317,22 @@
 		margin: 3em 1em;
 	}
 	.contentMainWrapper {
-		margin: 25em 0;
+		margin: 35em 0;
 	}
 
-	.mainMainWrapper {
-		margin: 0;
+	.disabledLink {
+		opacity: 100%;
 	}
-}
 
-.disabledLink {
-	opacity: 100%;
-}
+	.box1Div {
+		box-shadow: 12px 12px 36px #6b6b6b, -12px -12px 36px #b9a8ff;
+	}
 
-@media (max-width: 1200px) {
-	
-.box1Div {
-	box-shadow: 12px 12px 36px #6b6b6b, -12px -12px 36px #b9a8ff;
-}
+	.box2Div {
+		box-shadow: 12px 12px 36px #6b6b6b, -12px -12px 36px #8bffea;
+	}
 
-.box2Div {
-	box-shadow: 12px 12px 36px #6b6b6b, -12px -12px 36px #8bffea;
-}
-
-.box3Div {
-	box-shadow: 12px 12px 36px #6b6b6b, -12px -12px 36px #ef9697;
-}
+	.box3Div {
+		box-shadow: 12px 12px 36px #6b6b6b, -12px -12px 36px #ef9697;
+	}
 }

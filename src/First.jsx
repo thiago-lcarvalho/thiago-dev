@@ -5,6 +5,7 @@ import Typewriter from 'typewriter-effect';
 export function First() {
 	return (
 		<section>
+			<a name="1"></a>
 			<section className={styles.introMainWrapper}>
 				<div className={styles.subMainDiv}>
 					<Avatar
