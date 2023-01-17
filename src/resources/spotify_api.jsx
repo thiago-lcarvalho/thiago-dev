@@ -17,6 +17,7 @@ const res = axios
 	.post('https://accounts.spotify.com/api/token', qs.stringify(data), headers)
 	.then((res) => res.data.access_token);
 
+
 const NEW_ACCESS_TOKEN = 'Bearer ' + (await res);
 
 const resSpotify = await axios

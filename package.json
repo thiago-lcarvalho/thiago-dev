@@ -8,7 +8,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "vite build",
+    "build": "babel src -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -31,6 +31,10 @@
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
