@@ -1,8 +1,18 @@
 import styles from './first.module.css';
 import Avatar from '@mui/material/Avatar';
 import Typewriter from 'typewriter-effect';
+import { useState, useEffect } from 'react';
 
 export function First() {
+	const [isInPT, setIsInPT] = useState(false);
+
+useEffect(() => {
+   const defaultLanguage = navigator.language || navigator.languages[0];
+   if (defaultLanguage.substring(0, 2) === 'pt') {
+      setIsInPT(true);
+   }
+}, []);
+
 	return (
 		<section>
 			<a name="1"></a>
@@ -23,12 +33,7 @@ export function First() {
 					<h1 className={styles.frontTitle}>
 						<Typewriter
 							options={{
-							
-								strings: [
-									'Developer',
-									'Designer',
-									'Artist',
-								],
+								strings: ['Developer', 'Designer', 'Artist'],
 								autoStart: true,
 								loop: true,
 							}}
