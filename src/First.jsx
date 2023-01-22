@@ -13,6 +13,9 @@ useEffect(() => {
    }
 }, []);
 
+const ptArray = ['Desenvolvedor', 'Designer', 'Artista']
+const enArray = ['Developer', 'Designer', 'Artist']
+
 	return (
 		<section>
 			<a name="1"></a>
@@ -26,14 +29,14 @@ useEffect(() => {
 					/>
 					<div className={styles.contentIntro}>
 						<span className={styles.IntroHello}>
-							Hello, my name is
+							{isInPT ? 'Olá, meu nome é' : 'Hello, my name is'}
 						</span>
 						<span className={styles.IntroName}>Thiago Afonso</span>
 					</div>
 					<h1 className={styles.frontTitle}>
 						<Typewriter
 							options={{
-								strings: ['Developer', 'Designer', 'Artist'],
+								strings: isInPT ? ptArray : enArray,
 								autoStart: true,
 								loop: true,
 							}}

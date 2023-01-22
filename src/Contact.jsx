@@ -88,7 +88,7 @@ export function Contact() {
 				</ul>
 				<ul className={styles.linkButtons}>
 					<a
-						href="/assets/cv.pdf"
+						href={isInPT ? "/assets/cv-PT.pdf" : "/assets/cv.pdf"}
 						target="blank"
 						title="Open CV"
 					>

@@ -5,8 +5,18 @@ import { HiDocumentText } from 'react-icons/Hi';
 import { MdOutlineEmail } from 'react-icons/Md';
 import { BsFillSquareFill } from 'react-icons/Bs';
 import Avatar from '@mui/material/Avatar';
+import { useState, useEffect } from 'react';
 
 export function Header() {
+	const [isInPT, setIsInPT] = useState(false);
+
+	useEffect(() => {
+		const defaultLanguage = navigator.language || navigator.languages[0];
+		if (defaultLanguage.substring(0, 2) === 'pt') {
+			setIsInPT(true);
+		}
+	}, []);
+
 	return (
 		<>
 			<header className={styles.header}>
@@ -86,7 +96,7 @@ export function Header() {
 				</ul>
 				<ul className={styles.linkButtons}>
 					<a
-						href="/assets/cv.pdf"
+						href={isInPT ? "/assets/cv-PT.pdf" : "/assets/cv.pdf"}
 						target="blank"
 						title="Open CV"
 					>
