@@ -2,8 +2,17 @@ import styles from './contact.module.css';
 import { RiGithubFill, RiLinkedinFill, RiInstagramFill } from 'react-icons/Ri';
 import { HiDocumentText } from 'react-icons/Hi';
 import { MdOutlineEmail } from 'react-icons/Md';
+import { useState, useEffect } from 'react';
 
 export function Contact() {
+	const [isInPT, setIsInPT] = useState(false);
+
+	useEffect(() => {
+		const defaultLanguage = navigator.language || navigator.languages[0];
+		if (defaultLanguage.substring(0, 2) === 'pt') {
+			setIsInPT(true);
+		}
+	}, []);
 
 	return (
 		<section className={styles.contentMainWrapper}>
@@ -12,7 +21,8 @@ export function Contact() {
 				<span className={styles.contactFirst}>Get in touch!</span>
 				<div className={styles.bar}></div>
 				<p className={styles.contactP}>
-					I am currently seeking new challenges in the tech industry!<br/>
+					I am currently seeking new challenges in the tech industry!
+					<br />
 					If you have a potential project or position that aligns with
 					my skills and experience, reach out!
 				</p>
@@ -88,7 +98,7 @@ export function Contact() {
 				</ul>
 				<ul className={styles.linkButtons}>
 					<a
-						href={isInPT ? "/assets/cv-PT.pdf" : "/assets/cv.pdf"}
+						href={isInPT ? '/assets/cv-PT.pdf' : '/assets/cv.pdf'}
 						target="blank"
 						title="Open CV"
 					>
