@@ -33,7 +33,7 @@ export function Header() {
 							src="/assets/important-photo-2.png"
 						/>
 					</a>
-					<span>thank you for visiting ❤️</span>
+					<span>{isInPT ? 'obrigado pela visita' : 'thank you for visiting'} ❤️</span>
 				</div>
 			</header>
 			<div className={styles.leftHeader}>

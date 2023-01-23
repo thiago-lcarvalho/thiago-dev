@@ -157,8 +157,8 @@ export function Third() {
 								<div className={styles.apiSpotifyPs}>
 									<p>
 										{isInPT
-											? 'Buscando dados da API do Spotify utilizando o fluxo de autorização de código. Solicitando token de acesso e auto-atualizando com o token de atualização.'
-											: `Fetching data from Spotify API utilizing the Authorization Code Flow. Requesting access token and self-refreshing with Refresh Token.`}
+											? 'Buscando dados da API do Spotify utilizando o fluxo de autorização de código.'
+											: `Fetching data from Spotify API utilizing the Authorization Code Flow.`}
 										<br />
 										<br />
 										{isInPT
