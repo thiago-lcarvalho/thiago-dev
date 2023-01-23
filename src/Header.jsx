@@ -38,58 +38,58 @@ export function Header() {
 			</header>
 			<div className={styles.leftHeader}>
 				<ul
-					title="LinkedIn Profile"
+					title={isInPT ? "Perfil LinkedIn" : "LinkedIn Profile"}
 					className={styles.linkButtons}
 				>
 					<a
 						href="https://www.linkedin.com/in/thiagoalcarvalho/"
 						target="blank"
-						title="LinkedIn Profile"
+						title={isInPT ? "Perfil LinkedIn" : "LinkedIn Profile"}
 					>
 						<RiLinkedinFill
 							size={25}
-							title="LinkedIn Profile"
+							title={isInPT ? "Perfil LinkedIn" : "LinkedIn Profile"}
 						/>
 					</a>
 				</ul>
 				<ul
-					title="GitHub Profile"
+					title={isInPT ? "Perfil GitHub" : "GitHub Profile"}
 					className={styles.linkButtons}
 				>
 					<a
 						href="https://github.com/thiago-lcarvalho"
 						target="blank"
-						title="GitHub Profile"
+						title={isInPT ? "Perfil GitHub" : "GitHub Profile"}
 					>
 						<RiGithubFill
 							size={25}
-							title="GitHub Profile"
+							title={isInPT ? "Perfil GitHub" : "GitHub Profile"}
 						/>
 					</a>
 				</ul>
 				<ul
-					title="Instagram Profile"
+					title={isInPT ? "Perfil Instagram" : "Instagram Profile"}
 					className={styles.linkButtons}
 				>
 					<a
 						href="https://www.instagram.com/sothiagomesmo/"
 						target="blank"
-						title="Instagram Profile"
+						title={isInPT ? "Perfil Instagram" : "Instagram Profile"}
 					>
 						<RiInstagramFill
 							size={25}
-							title="Instagram Profile"
+							title={isInPT ? "Perfil Instagram" : "Instagram Profile"}
 						/>
 					</a>
 				</ul>
 				<ul
-					title="Send E-mail"
+					title={isInPT ? "Enviar E-mail" : "Send E-mail"}
 					className={styles.linkButtons}
 				>
 					<a
 						href="mailto:eu@thiagoafonso.com"
 						target="blank"
-						title="Send E-mail"
+						title={isInPT ? "Enviar E-mail" : "Send E-mail"}
 					>
 						<MdOutlineEmail size={25} />
 					</a>
@@ -98,7 +98,7 @@ export function Header() {
 					<a
 						href={isInPT ? "/assets/cv-PT.pdf" : "/assets/cv.pdf"}
 						target="blank"
-						title="Open CV"
+						title={isInPT ? "Abrir Currículo" : "Open CV"}
 					>
 						<HiDocumentText size={25} />
 					</a>

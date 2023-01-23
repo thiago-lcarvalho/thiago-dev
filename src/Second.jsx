@@ -11,8 +11,18 @@ import {
 	Command,
 } from 'phosphor-react';
 import Stack from '@mui/material/Stack';
+import { useEffect, useState } from 'react';
 
 export function Second() {
+	const [isInPT, setIsInPT] = useState(false);
+
+	useEffect(() => {
+		const defaultLanguage = navigator.language || navigator.languages[0];
+		if (defaultLanguage.substring(0, 2) === 'pt') {
+			setIsInPT(true);
+		}
+	}, []);
+
 	var timeStartedDev = moment('2022-07-06T18:00:00Z');
 	var timeNow = moment();
 	const hoursSinceStartedDev = timeNow.diff(timeStartedDev, 'hours');
@@ -62,16 +72,17 @@ export function Second() {
 								{hoursSinceStartedDev}
 							</span>
 							<span className={styles.hoursSinceText}>
-								hours
+								{isInPT ? 'horas' : 'hours'}
 								<br />
-								since the start
+								{isInPT ? 'desde o início' : 'since the start'}
 								<br />
-								of my journey
+								{isInPT ? 'da minha jornada' : 'of my journey'}
 							</span>
 						</div>
 						<span className={styles.hoursSinceHiddenText}>
-							on 06/07/2022 I made the decision to become a
-							developer
+							{isInPT
+								? 'no dia 06/07/2022 eu tomei a decisão de me tornar um desenvolvedor '
+								: 'on 06/07/2022 I made the decision to become a developer'}
 						</span>
 					</div>
 					<Stack

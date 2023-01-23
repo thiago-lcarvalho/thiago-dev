@@ -2,50 +2,21 @@ import { SpotifyLogo } from 'phosphor-react';
 import styles from './third.module.css';
 import GitHubCalendar from 'react-github-calendar';
 import { resSpotify } from './resources/spotify_api';
-import { NASA_API_KEY } from './resources/API_KEYS';
-import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 
+
 export function Third() {
+	const [isInPT, setIsInPT] = useState(false);
+
+	useEffect(() => {
+		const defaultLanguage = navigator.language || navigator.languages[0];
+		if (defaultLanguage.substring(0, 2) === 'pt') {
+			setIsInPT(true);
+		}
+	}, []);
 	const [loaderScreen, setloaderScreen] = useState([]);
 	setTimeout(setloaderScreen, 1000);
-
-	const [resNasa, setResNasa] = useState([]);
-	const [loadingAPI, setLoading] = useState(true);
-	const NASA_API_URL =
-		`https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=` + NASA_API_KEY;
-	useEffect(() => {
-		axios.get(NASA_API_URL).then((res) => {
-			setResNasa(res);
-			setLoading(false);
-		});
-	}, []);
-	function randomAsteroid(arr) {
-		const randomIndex = Math.floor(Math.random() * arr.length);
-		const item = arr[randomIndex];
-
-		return item;
-	}
-
-	let nasaAsteroid = loadingAPI ? '' : resNasa.data.near_earth_objects;
-	let nasaRandomAsteroid = loadingAPI ? '' : randomAsteroid(nasaAsteroid);
-	let nasaAsteroidName = loadingAPI ? '' : nasaRandomAsteroid.name_limited;
-	let nasaAsteroidID = loadingAPI ? '' : nasaRandomAsteroid.id;
-	let nasaAsteroidIDURL = loadingAPI
-		? ''
-		: `https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=${nasaAsteroidID}&view=VOPDCA`;
-	let nasaAsteroidHazardous = loadingAPI
-		? ''
-		: nasaRandomAsteroid.is_potentially_hazardous_asteroid;
-
-	if (nasaAsteroidHazardous == true) {
-		nasaAsteroidHazardous = 'Yes';
-	} else if (nasaAsteroidHazardous == false) {
-		nasaAsteroidHazardous = 'No';
-	} else {
-		nasaAsteroidHazardous = 'Unknown';
-	}
 
 	const spotifyTrack = resSpotify.data.items[0].track.name;
 	const spotifyTrackURL =
@@ -53,6 +24,7 @@ export function Third() {
 	const spotifyTrackIMG = resSpotify.data.items[0].track.album.images[1].url;
 	const spotifyTrackArtist = resSpotify.data.items[0].track.artists[0].name;
 
+	
 	const sinceStart = (contributions) => {
 		const currentDate = new Date();
 		const shownDays = 60;
@@ -68,8 +40,9 @@ export function Third() {
 		});
 	};
 
+	
 	return (
-	<>
+		<>
 			<a
 				name="3"
 				className={styles.disabledLink}
@@ -102,26 +75,21 @@ export function Third() {
 						<div className={styles.box1Div}>
 							<div className={styles.div1Text}>
 								<p>
-									As a tech-savvy and design-loving
-									individual, I am constantly on the lookout
-									for the latest and greatest in the world of
-									technology.
+									{isInPT
+										? 'Sou um indivíduo apaixonado por inovação e design, estou sempre em busca do melhor e mais atual no mundo da tecnologia.'
+										: 'As a tech-savvy and design-loving individual, I am constantly on the lookout for the latest and greatest in the world of technology.'}
 								</p>
 								<br />
-
 								<p>
-									With a background in coding with React and a
-									desire to constantly improve my skills, I am
-									always ready to take on new challenges and
-									push the boundaries of what's possible.
+									{isInPT
+										? 'Com um background em programação e um desejo de melhorar minhas habilidades constantemente, estou sempre pronto para enfrentar novos desafios e empurrar os limites do possível.'
+										: `With a background in coding and a desire to constantly improve my skills, I am always ready to take on new challenges and push the boundaries of what's possible.`}
 								</p>
 								<br />
-
 								<p>
-									Whether I'm working on a project that
-									combines coding and design or simply
-									tinkering with the latest tech, I thrive on
-									the thrill of bringing new ideas to life.
+									{isInPT
+										? 'Seja trabalhando em um projeto que combine programação e design ou simplesmente estudando a última tecnologia, meu progresso é trazer novas ideias à vida.'
+										: `Whether I'm working on a project that combines coding and design or simply tinkering with the latest tech, my progress is bringing new ideas to life.`}
 								</p>
 							</div>
 						</div>
@@ -146,8 +114,8 @@ export function Third() {
 									}}
 								/>
 								<span className={styles.gitHubCalendarText}>
-									github contributions <br />
-									in the last 2 months
+								{isInPT	? 'contribuições no github' : 'github contributions'} <br />
+								{isInPT	? 'nos ultimos 2 meses' : 'in the last 2 months'}
 								</span>
 							</div>
 						</div>
@@ -182,20 +150,29 @@ export function Third() {
 						>
 							<div className={styles.spotifyInfoText}>
 								<p className={styles.apiSpotifyInfo}>
-									Displaying stats of my last heard song on
-									spotify in real time with Axios
+									{isInPT
+										? 'Exibindo estatísticas da minha última música ouvida no Spotify em tempo real com Axios'
+										: 'Displaying stats of my last heardsong on spotify in real time with Axios'}
 								</p>
 								<div className={styles.apiSpotifyPs}>
 									<p>
-										Fetching data from Spotify API utilizing
-										the Authorization Code Flow.
+										{isInPT
+											? 'Buscando dados da API do Spotify utilizando o fluxo de autorização de código. Solicitando token de acesso e auto-atualizando com o token de atualização.'
+											: `Fetching data from Spotify API utilizing the Authorization Code Flow. Requesting access token and self-refreshing with Refresh Token.`}
 										<br />
 										<br />
-										Requesting access token <br />
-										and self-refreshing with Refresh Token
+										{isInPT
+											? 'Requisitando token de acesso'
+											: 'Requesting access token'}
+										<br />
+										{isInPT
+											? 'E auto-atualizando com o token de atualização'
+											: 'and self-refreshing with Refresh Token'}
 										<br />
 										<br />
-										Click to check
+										{isInPT
+											? 'Clique para checar'
+											: `Click to check`}
 									</p>
 								</div>
 							</div>
