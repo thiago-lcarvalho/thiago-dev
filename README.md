@@ -20,7 +20,15 @@
 # Introduction
 ![demo](https://raw.githubusercontent.com/thiago-lcarvalho/thiago-dev/main/assets/demo.png)
 
-Hello! the purpose of this project was to introduce myself into development and test what some of the things I learned about React and front-end.
+Hello! 
+
+The purpose of this project is to introduce myself into development and test some of the things I learned about React + html/css/js + programming in general.
+
+This was my first fully commited attempt to create a website from start to finish.
+
+This process took about 2-3 months with a lot of different conflicting design ideas but i'm happy with what I built!
+
+There's a lot to do still but I'm satisfied enough to start a new project.
 
 I intend to keep updating this project or make new versions with different frameworks and libraries.
 
@@ -36,16 +44,8 @@ this website uses a ton of cool open-source projects and other tools:
 
     [react]: https://reactjs.org/
     [spotify for developers]: https://developer.spotify.com/discover/
-    [df1]: http://daringfireball.net/projects/markdown/
-    [markdown-it]: https://github.com/markdown-it/markdown-it
     [phosphor icons]: https://phosphoricons.com
-    [node.js]: http://nodejs.org
     [vite]: https://vitejs.dev/
-    [jquery]: http://jquery.com
-    [@tjholowaychuk]: http://twitter.com/tjholowaychuk
-    [express]: http://expressjs.com
-    [axios]: https://axios-http.com/docs/intro
-    [gulp]: http://gulpjs.com
 
 
 # Info
