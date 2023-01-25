@@ -1,4 +1,4 @@
-di<div align="center">
+<div align="center">
 <img src=https://raw.githubusercontent.com/thiago-lcarvalho/thiago-dev/main/assets/important-photo-2.png width="100" height="100"/>
 </div>
 <h1 align="center">
@@ -9,11 +9,16 @@ di<div align="center">
 </p>
 
 <div align="center">
+<a href="https://thiagoafonso.com/" target="blank">
 <img src="https://img.shields.io/website?down_color=critical&down_message=offline&up_color=light%20green&up_message=online&url=https%3A%2F%2Fthiagoafonso.com%2F&logo=firebase">
+</a>
+<a href="https://github.com/thiago-lcarvalho/thiago-dev">
 <img src="https://img.shields.io/github/last-commit/thiago-lcarvalho/thiago-dev?color=informational&logo=github">
+</a>
 </div>
 
 # Hello!
+
 
 ![demo](https://raw.githubusercontent.com/thiago-lcarvalho/thiago-dev/main/assets/demo.png)
 
