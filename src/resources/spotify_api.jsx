@@ -1,11 +1,11 @@
 import axios from 'axios';
 import qs from 'qs';
-import { BASE64, REFRESH_TOKEN } from './API_KEYS';
+import { CLIENT_ID, REFRESH_TOKEN } from './API_KEYS';
 
 const headers = {
 	headers: {
 		'Content-Type': 'application/x-www-form-urlencoded',
-		Authorization: 'Basic ' + BASE64,
+		Authorization: 'Basic ' + CLIENT_ID,
 	},
 };
 const data = {
