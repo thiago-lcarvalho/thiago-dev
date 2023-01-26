@@ -6,15 +6,15 @@ import { useState, useEffect } from 'react';
 export function First() {
 	const [isInPT, setIsInPT] = useState(false);
 
-useEffect(() => {
-   const defaultLanguage = navigator.language || navigator.languages[0];
-   if (defaultLanguage.substring(0, 2) === 'pt') {
-      setIsInPT(true);
-   }
-}, []);
+	useEffect(() => {
+		const defaultLanguage = navigator.language || navigator.languages[0];
+		if (defaultLanguage.substring(0, 2) === 'pt') {
+			setIsInPT(true);
+		}
+	}, []);
 
-const ptArray = ['Desenvolvedor', 'Designer', 'Artista']
-const enArray = ['Developer', 'Designer', 'Artist']
+	const ptArray = ['Desenvolvedor', 'Designer', 'Artista'];
+	const enArray = ['Developer', 'Designer', 'Artist'];
 
 	return (
 		<section>
@@ -29,7 +29,7 @@ const enArray = ['Developer', 'Designer', 'Artist']
 					/>
 					<div className={styles.contentIntro}>
 						<span className={styles.IntroHello}>
-							{isInPT ? 'Olá, meu nome é' : 'Hello, my name is'}
+							{isInPT ? 'Olá, meu nome é' : 'Hi, my name is'}
 						</span>
 						<span className={styles.IntroName}>Thiago Afonso</span>
 					</div>

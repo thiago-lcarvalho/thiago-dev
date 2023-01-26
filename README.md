@@ -50,7 +50,7 @@ this website uses a ton of cool open-source projects and other tools:
 
 # Info
 
-> how I used Spotify`s API
+> Spotify's API
 
 ```javascript
 import { CLIENT_ID, REFRESH_TOKEN } from './API_KEYS';
@@ -88,4 +88,4 @@ const resSpotify = await axios.get(
 ```
 
 ---
-...
+
