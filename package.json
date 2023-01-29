@@ -16,8 +16,6 @@
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.10.15",
     "axios": "^1.2.1",
-    "buffer": "^6.0.3",
-    "framer-motion": "^7.6.17",
     "moment": "^2.29.4",
     "phosphor-react": "^1.4.1",
     "qs": "^6.11.0",
@@ -25,9 +23,6 @@
     "react-dom": "^18.2.0",
     "react-github-calendar": "^3.4.0",
     "react-icons": "^4.6.0",
-    "react-moment": "^1.1.2",
-    "react-responsive-carousel": "^3.2.23",
-    "react-use-scroll-snap": "^0.0.4",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
