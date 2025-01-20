@@ -1,7 +1,7 @@
 import { SpotifyLogo } from 'phosphor-react';
 import styles from './third.module.css';
 import GitHubCalendar from 'react-github-calendar';
-import { resSpotify } from './resources/spotify_api';
+// import { resSpotify } from './resources/spotify_api';
 import { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 
@@ -18,11 +18,11 @@ export function Third() {
 	const [loaderScreen, setloaderScreen] = useState([]);
 	setTimeout(setloaderScreen, 1000);
 
-	const spotifyTrack = resSpotify.data.items[0].track.name;
-	const spotifyTrackURL =
-		resSpotify.data.items[0].track.external_urls.spotify;
-	const spotifyTrackIMG = resSpotify.data.items[0].track.album.images[1].url;
-	const spotifyTrackArtist = resSpotify.data.items[0].track.artists[0].name;
+	// const spotifyTrack = resSpotify.data.items[0].track.name;
+	// const spotifyTrackURL =
+	// 	resSpotify.data.items[0].track.external_urls.spotify;
+	// const spotifyTrackIMG = resSpotify.data.items[0].track.album.images[1].url;
+	// const spotifyTrackArtist = resSpotify.data.items[0].track.artists[0].name;
 
 	
 	const sinceStart = (contributions) => {
@@ -47,6 +47,7 @@ export function Third() {
 				name="3"
 				className={styles.disabledLink}
 			></a>
+
 			<div className={styles.contentMainWrapper}>
 				<div id={loaderScreen ? styles.overlay : styles.blank}>
 					<Box sx={{ display: 'flex' }}>
@@ -67,7 +68,7 @@ export function Third() {
 				</div>
 
 				<div className={styles.boxDivs}>
-					<a
+					{/* <a
 						className={styles.boxLink}
 						href="https://www.linkedin.com/in/thiagoalcarvalho/"
 						target="_blank"
@@ -93,7 +94,7 @@ export function Third() {
 								</p>
 							</div>
 						</div>
-					</a>
+					</a> */}
 
 					<a
 						className={styles.boxLink}
@@ -121,7 +122,7 @@ export function Third() {
 						</div>
 					</a>
 
-					<div className={styles.box3Div}>
+					{/* <div className={styles.box3Div}>
 						<a
 							href={spotifyTrackURL}
 							target="blank"
@@ -177,9 +178,10 @@ export function Third() {
 								</div>
 							</div>
 						</a>
-					</div>
+					</div> */}
 				</div>
 			</div>
+			
 		</>
 	);
 }
